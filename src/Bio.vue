@@ -2,7 +2,7 @@
   <div class="bio">
     <img src="src/assets/me.jpg" class="portrait">
     <div class="description">
-      <span v-html="bio"></span>
+      <span v-html="bio" lang="en"></span>
     </div>
   </div>
 </template>
@@ -12,7 +12,7 @@ export default {
   name: 'bio',
   data () {
     return {
-      bio: 'I’m a 2nd-year Computer Science Ph.D. student studying at <a href="#">State Key Lab of CAD&CG, Zhejiang University</a> (as of Jul, 2018) and a <a href="#">ZJUVIS</a> group member supervised by <a href="#">Prof. Yingcai Wu</a>. My current research interest lies in the <b>Visual Analytics of Massive Urban Data</b>.'
+      bio: 'I’m a 2nd-year Com&shy;puter Sci&shy;ence Ph.D. stu&shy;dent study&shy;ing at <a href="#">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Jul, 2018) and a <a href="#">ZJU&shy;VIS</a> group mem&shy;ber su&shy;per&shy;vised by <a href="#">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.'
     }
   }
 }
@@ -22,13 +22,14 @@ export default {
 @import './def.scss';
 
 .bio {
-  margin: 30px 40px;
+  margin: 30px 35px;
   display: flex;
   flex-direction: column;
 
   @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
-    margin: 30px 40px 40px 60px;
+    margin: 30px 50px;
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .portrait {
@@ -42,6 +43,7 @@ export default {
 
     @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
       flex-direction: row;
+      margin: 0;
     }
   }
 
@@ -53,9 +55,9 @@ export default {
     justify-content: center;
     margin-top: 30px;
 
-
     @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
       margin-top: 0;
+      max-width: 72%;
     }
 
     span {
@@ -65,10 +67,14 @@ export default {
 
       font-size: 1.1rem;
       line-height: 1.9em;
-      text-align: center;
+      text-indent: 2rem;
+
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
 
       @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
-        padding-left: 35px;
         text-align: left;
       }
 
@@ -76,8 +82,8 @@ export default {
         font-family: Georgia;
         content: "\201C";
         position: absolute;
-        left: 40px;
-        top: 55px;
+        left: -2rem;
+        top: 3rem;
         font-size: 10em;
         color: #f2f2f2;
         z-index: -1;

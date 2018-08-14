@@ -1,7 +1,9 @@
 <template>
   <section class="skills">
     <h2>Skills</h2>
-    <svg class="skill-cloud"></svg>
+    <div class="cloud-wrapper">
+      <svg class="skill-cloud"></svg>
+    </div>
   </section>
 </template>
 
@@ -48,7 +50,7 @@ export default {
   },
   mounted () {
     const fontFamily = 'Merriweather'
-    const fontWeight = 500
+    const fontWeight = 400
 
     for (const s of this.skills) {
       s.size = s.level / 10 * 44 + 6
@@ -58,25 +60,15 @@ export default {
       cloud()
       .size([760, 400])
       .words(this.skills)
-      .padding(2)
+      .padding(3)
       .font(fontFamily)
       .fontSize(function(d) { return d.size })
       .rotate(0)
       .fontWeight(fontWeight)
-      // .spiral('rectangular')
       .on('end', words => {
-        let minHeight = Infinity
-        let maxHeight = -Infinity
-        for (const w of words) {
-          minHeight = Math.min(minHeight, w.y + w.y0)
-          maxHeight = Math.max(maxHeight, w.y + w.y1)
-        }
-        const height = maxHeight - minHeight + 20
-
         d3.select('.skill-cloud')
-          .attr('width', 760).attr('height', height)
           .append('g')
-          .attr('transform', `translate(380, ${ height / 2 })`)
+          .attr('transform', `translate(350, 200)`)
           .selectAll('text')
             .data(words)
           .enter().append('text')
@@ -98,10 +90,23 @@ export default {
 
 <style lang="scss">
 .skills {
+  .cloud-wrapper {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 700px;
+    height: 400px;
+    background-color: rgba(236, 240, 241, 0.5);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
   .skill-cloud {
     margin: 30px auto -20px auto;
     display: block;
     overflow: visible;
+    width: 700px;
+    height: 400px;
   }
 }
 </style>

@@ -89,7 +89,7 @@ $AWARDS_LEFT_COLUMN_COLOR: #95a5a6;
         }
 
         .what {
-          font-weight: 500;
+          font-weight: 400;
         }
       }
     }

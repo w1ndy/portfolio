@@ -118,7 +118,7 @@ $TEASER_RIGHT_MARGIN: 20px;
         }
 
         .links {
-          font-weight: 500;
+          font-weight: 400;
           position: absolute;
           bottom: 0;
           color: #95a5a6;

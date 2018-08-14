@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style lang="scss">
-$bkgnd: lighten(#ecf0f1, 10%);
+@import "../def.scss";
 
 .experience {
   a {
@@ -67,16 +67,21 @@ $bkgnd: lighten(#ecf0f1, 10%);
   }
 
   .entry-cont {
-    margin-left: 180px;
+    margin-left: 30px;
     border-left: 2px solid #7f8c8d;
     box-sizing: content-box;
     padding-bottom: 30px;
+
+
+    @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+      margin-left: 180px;
+    }
   }
 
   .entry {
     padding-top: 50px;
     position: relative;
-    padding-left: 20px;
+    padding-left: 30px;
     line-height: 1.6em;
     font-weight: 300;
     box-sizing: content-box;
@@ -89,7 +94,7 @@ $bkgnd: lighten(#ecf0f1, 10%);
         display: block;
         width: 5px;
         height: 40px;
-        background-color: $bkgnd;
+        background-color: $BACKGROUND_COLOR;
         left: -2.5px;
         top: 0;
       }
@@ -114,23 +119,28 @@ $bkgnd: lighten(#ecf0f1, 10%);
     }
 
     .date, .location {
-      position: absolute;
-      right: 100%;
-      width: 180px;
-      text-align: right;
-      padding-right: 20px;
       color: #95a5a6;
+
       a {
         color: #95a5a6;
+      }
+
+      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        position: absolute;
+        right: 100%;
+        width: 180px;
+        text-align: right;
+        padding-right: 20px;
       }
     }
 
     .location {
-      padding-top: 25px;
+      // padding-top: 25px;
     }
 
     .title {
       font-weight: 700;
+      padding-top: 10px;
     }
 
     .logo {

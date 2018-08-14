@@ -47,7 +47,7 @@ export default {
     top: 50%;
     left: 0;
     width: 100%;
-    transform: translateY(-40%);
+    transform: translateY(-50%);
     font-size: 2.2rem;
 
     @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {

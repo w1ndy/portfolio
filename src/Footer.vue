@@ -32,7 +32,7 @@ export default {
 
 <style lang="scss">
 footer {
-  margin: 100px 0;
+  margin: 100px 30px;
   text-align: center;
   font-size: 0.8em;
   color: #95a5a6;

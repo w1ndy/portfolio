@@ -65,6 +65,14 @@ export default {
 <style lang="scss">
 @import './def.scss';
 
+html {
+  font-size: 14px;
+
+  @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+    font-size: 16px;
+  }
+}
+
 body {
   width: 100vw;
   margin: 0 auto;
@@ -117,7 +125,6 @@ body {
   flex-direction: column;
   position: relative;
   width: 100%;
-  overflow: hidden;
 
   @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
     flex-direction: row;
@@ -125,20 +132,57 @@ body {
 
   .content-cont {
     flex: 1 1;
+    overflow: hidden;
   }
 
   .toc {
+    padding-top: 55px;
     flex: 0 0 150px;
     display: none;
 
     @media only screen and (min-width: $TOC_BREAKPOINT) {
       display: block;
     }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 20px;
+
+      li {
+        height: 1.8rem;
+        line-height: 1.8rem;
+        padding-left: 10px;
+        margin-bottom: 5px;
+        font-size: 0.9em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        transition: box-shadow 200ms;
+        transform: scale(1, 0.93);
+
+        a {
+          transition: color 200ms;
+          color: #bdc3c7;
+        }
+
+        &.active {
+          // border-left: 5px solid #95a5a6;
+          box-shadow: -5px 0px 0px 0px #95a5a6;
+
+          a {
+            color: #95a5a6;
+          }
+        }
+      }
+    }
   }
 }
 
 section {
-  margin: 50px 30px 70px 30px;
+  margin: 50px 35px 50px 35px;
 
   h2 {
     position: relative;
@@ -151,42 +195,11 @@ section {
   }
 }
 
-.toc {
-  padding-top: 55px;
-  position: -webkit-sticky;
-  position: sticky;
-  align-self: flex-start;
-  top: -40px;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      height: 1.8rem;
-      line-height: 1.8rem;
-      padding-left: 10px;
-      margin-bottom: 5px;
-      font-size: 0.9em;
-      font-weight: 700;
-      letter-spacing: 1px;
-      transition: box-shadow 200ms;
-
-      a {
-        transition: color 200ms;
-        color: #bdc3c7;
-      }
-
-      &.active {
-        // border-left: 5px solid #95a5a6;
-        box-shadow: -5px 0px 0px 0px #95a5a6;
-
-        a {
-          color: #95a5a6;
-        }
-      }
-    }
-  }
-}
+// .toc {
+//   padding-top: 55px;
+//   position: -webkit-sticky;
+//   position: sticky;
+//   align-self: flex-start;
+//   top: -40px;
+// }
 </style>
