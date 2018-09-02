@@ -61,13 +61,16 @@ export default {
 <style lang="scss">
 @import "../def.scss";
 
+$LOGO_WIDTH: 120px;
+$LOGO_RIGHT_PADDING: 25px;
+
 .experience {
   a {
     text-decoration: none;
   }
 
   .entry-cont {
-    margin-left: 30px;
+    // margin-left: 30px;
     border-left: 2px solid #7f8c8d;
     box-sizing: content-box;
     padding-bottom: 30px;
@@ -85,6 +88,10 @@ export default {
     line-height: 1.6em;
     font-weight: 300;
     box-sizing: content-box;
+
+    @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+      padding-right: $LOGO_WIDTH + $LOGO_RIGHT_PADDING;
+    }
 
     &:first-child {
       padding-top: 30px;
@@ -135,25 +142,32 @@ export default {
     }
 
     .location {
-      // padding-top: 25px;
+      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        padding-top: 25px;
+      }
     }
 
     .title {
       font-weight: 700;
       padding-top: 10px;
+
+      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        padding-top: 0px;
+      }
     }
 
     .logo {
-      position: absolute;
-      right: 25px;
-      height: 40px;
-      width: 120px;
-      object-fit: contain;
-      bottom: 0;
-      transform: translateY(-5px);
+      display: none;
 
-      @media only screen and (max-width: 600px) {
-        display: none;
+      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        display: block;
+        position: absolute;
+        right: $LOGO_RIGHT_PADDING;
+        height: 40px;
+        width: $LOGO_WIDTH;
+        object-fit: contain;
+        bottom: 0;
+        transform: translateY(-5px);
       }
     }
   }

@@ -66,9 +66,10 @@ export default {
       .rotate(0)
       .fontWeight(fontWeight)
       .on('end', words => {
-        d3.select('.skill-cloud')
-          .append('g')
-          .attr('transform', `translate(350, 200)`)
+        const el = d3.select('.skill-cloud')
+
+        el.append('g')
+          // .attr('transform', `translate(350, 200)`)
           .selectAll('text')
             .data(words)
           .enter().append('text')
@@ -81,6 +82,14 @@ export default {
               return 'translate(' + [d.x, d.y] + ')'
             })
             .text(function(d) { return d.text })
+
+        const rect = el.node().getBBox()
+        el.attr('viewBox', `${rect.x} ${rect.y} ${rect.width} ${rect.height}`)
+          .attr('width', rect.width)
+          .attr('height', rect.height)
+          // .attr('width', rect.width)
+          // .attr('height', rect.height)
+          // .select('g').attr('transform', `translate(${-rect.x},${-rect.y})`)
       })
       .start()
     })
@@ -91,22 +100,22 @@ export default {
 <style lang="scss">
 .skills {
   .cloud-wrapper {
+    padding-top: 30px;
     overflow-y: hidden;
     overflow-x: scroll;
-    width: 700px;
-    height: 400px;
-    background-color: rgba(236, 240, 241, 0.5);
+    // width: 700px;
+    // height: 400px;
+    // background-color: rgba(236, 240, 241, 0.5);
 
     &::-webkit-scrollbar {
       display: none;
     }
   }
   .skill-cloud {
-    margin: 30px auto -20px auto;
+    // margin: 30px auto -20px auto;
     display: block;
     overflow: visible;
-    width: 700px;
-    height: 400px;
+    margin: 0 auto;
   }
 }
 </style>

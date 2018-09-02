@@ -4,17 +4,21 @@
     <ul>
       <li v-for="pub in publications" :key="pub.title">
         <div class="teaser"><img :src="pub.teaser"></div>
-        <div class="info">
-          <div class="title">{{ pub.title }}</div>
-          <div class="authors" v-html="pub.authors"></div>
-          <div class="journal" v-html="pub.journal"></div>
+        <div class="info-cont">
+          <div class="info">
+            <div class="title" v-html="pub.title"></div>
+            <div class="authors" v-html="pub.authors"></div>
+            <div class="journal" v-html="pub.journal"></div>
+          </div>
           <div class="links">
-            <a v-if="pub.doi" :href="'https://dx.doi.org/' + pub.doi" class="doi">{{ pub.doi }}</a>
-            <span>
+            <div class="supp">
               <a v-if="pub.pdf" :href="pub.pdf"><i class="fas fa-file-pdf"></i>PDF</a>
               <a v-if="pub.video" :href="pub.video"><i class="fas fa-video"></i>Video</a>
               <a v-if="pub.demo" :href="pub.demo"><i class="fas fa-desktop"></i>Demo</a>
-            </span>
+            </div>
+            <div class="doi">
+              <a v-if="pub.doi" :href="'https://dx.doi.org/' + pub.doi" class="doi">{{ pub.doi }}</a>
+            </div>
           </div>
         </div>
       </li>
@@ -47,7 +51,7 @@ export default {
         },
         {
           teaser: 'src/assets/smartadp.png',
-          title: 'SmartAdP: Visual Analytics of Large-scale Taxi Trajectories for Selecting Billboard Locations',
+          title: 'SmartAdP: Visual Analytics of Large-scale Taxi Trajectories for Select&shy;ing Billboard Locations',
           authors: 'Dongyu Liu, <b>Di Weng</b>, Yuhong Li, Jie Bao, Yu Zheng, Huamin Qu, Yingcai Wu',
           journal: 'IEEE TVCG 23.1 (2017): 1-10. (IEEE VAST 2016)',
           pdf: '#',
@@ -62,7 +66,9 @@ export default {
 </script>
 
 <style lang="scss">
-$TEASER_RIGHT_MARGIN: 20px;
+@import "../def.scss";
+$TEASER_WIDTH: 200px;
+$INFOBOX_LEFT_MARGIN: 20px;
 
 .publications {
   ul {
@@ -71,85 +77,130 @@ $TEASER_RIGHT_MARGIN: 20px;
     padding: 30px 0 0 0;
 
     li {
-      display: flex;
-      flex-direction: row;
-      padding-right: 10px;
+      // display: flex;
+      // flex-direction: column;
+      // padding-right: 10px;
       box-sizing: content-box;
+      max-width: 500px;
+      margin: auto;
+      position: relative;
 
       &:not(:first-child) {
-        padding-top: 30px;
+        margin-top: 30px;
       }
 
       @media print {
         page-break-inside: avoid;
       }
 
+      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        display: flex;
+        flex-direction: row;
+        max-width: unset;
+      }
+
       .teaser {
-        flex: 0 0 220px;
         text-align: right;
 
+        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+          flex: 0 0 $TEASER_WIDTH;
+        }
+
         img {
-          width: 220px;
-          height: 130px;
+          width: 100%;
           object-fit: cover;
           border: 1px solid #eee;
-          transform: translateY(3px);
+
+          @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+            width: $TEASER_WIDTH;
+            height: 130px;
+            transform: translateY(3px);
+          }
         }
       }
 
-      .info {
-        flex: 1 1;
-        padding-left: $TEASER_RIGHT_MARGIN;
-        position: relative;
+      .info-cont {
+        padding-top: 10px;
+        line-height: 1.5rem;
+        top: 0;
+        bottom: 0;
 
-        & > div {
-          line-height: 1.5rem;
-          // margin-bottom: 5px;
+        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+          flex: 1 1;
+          margin-left: $INFOBOX_LEFT_MARGIN;
+          padding-top: 0;
+          position: relative;
+          // display: flex;
+          // flex-direction: column;
         }
 
-        .title {
-          font-weight: 700;
-        }
+        .info {
+          @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+            flex: 1 1;
+            overflow-y: scroll;
+          }
 
-        .authors, .journal {
-          font-weight: 300;
-          color: #95a5a6;
-          font-size: 0.9rem;
+          .title {
+            font-weight: 700;
+          }
+
+          .authors, .journal {
+            font-weight: 300;
+            color: #95a5a6;
+            font-size: 0.8rem;
+          }
         }
 
         .links {
           font-weight: 400;
-          position: absolute;
-          bottom: 0;
           color: #95a5a6;
-          width: calc(100% - #{$TEASER_RIGHT_MARGIN});
-          height: 1.5rem;
+          // height: 1.5rem;
+          padding-top: 10px;
+          font-size: 0.9rem;
 
-          span {
-            @media print {
-              display: none;
-            }
-          }
-
-          span > a:not(:last-child):after {
-            content: '·';
-            padding: 0 8px;
+          @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            width: 100%;
+            align-content: space-between;
           }
 
           a {
             color: #7f8c8d;
             text-decoration: none;
+            display: inline-block;
 
             i {
               padding-right: 5px;
             }
+          }
 
-            &.doi {
-              font-family: "Courier";
-              letter-spacing: -0.1rem;
-              position: absolute;
-              right: 0;
-              // font-size: 0.9rem;
+          .supp {
+            @media print {
+              display: none;
+            }
+            @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+              flex: 1 1;
+            }
+
+            a:not(:last-child):after {
+              content: '·';
+              padding: 0 8px;
+            }
+          }
+
+          .doi {
+            font-family: "Courier";
+            letter-spacing: -0.1rem;
+            display: none;
+
+            @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+              flex: 0 0;
+              display: block;
+              // padding-right: 10px;
             }
           }
         }
@@ -159,9 +210,9 @@ $TEASER_RIGHT_MARGIN: 20px;
 }
 
 .fa-file-pdf {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
 }
 .fa-desktop {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 </style>
