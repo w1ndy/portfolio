@@ -37,6 +37,7 @@ footer {
   font-size: 0.8em;
   color: #95a5a6;
   text-shadow: 0 0 2px lighten(#95a5a6, 20%);
+  line-height: 1.7rem;
 
   span:not(:first-child)::before {
     content: '|';
