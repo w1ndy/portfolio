@@ -37,7 +37,7 @@ $CONTACT_LEFT_COLUMN_COLOR: #95a5a6;
     font-weight: 300;
 
     .type {
-      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media (min-width: $RESPONSIVE_BREAKPOINT) {
         display: flex;
         flex-direction: row;
       }
@@ -50,7 +50,7 @@ $CONTACT_LEFT_COLUMN_COLOR: #95a5a6;
         padding-right: $CONTACT_SEPARATOR_SPACING;
         color: $CONTACT_LEFT_COLUMN_COLOR;
 
-        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        @media (min-width: $RESPONSIVE_BREAKPOINT) {
           flex: 0 0 70px;
           text-align: right;
         }
@@ -61,7 +61,7 @@ $CONTACT_LEFT_COLUMN_COLOR: #95a5a6;
         list-style: none;
         margin: 0;
 
-        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        @media (min-width: $RESPONSIVE_BREAKPOINT) {
           padding: 0 0 0 $CONTACT_SEPARATOR_SPACING;
         }
 

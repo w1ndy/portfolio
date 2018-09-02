@@ -66,7 +66,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
         page-break-inside: avoid;
       }
 
-      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media (min-width: $RESPONSIVE_BREAKPOINT) {
         display: flex;
         flex-direction: row;
         max-width: unset;
@@ -75,7 +75,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
       .teaser {
         text-align: right;
 
-        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        @media (min-width: $RESPONSIVE_BREAKPOINT) {
           flex: 0 0 $TEASER_WIDTH;
         }
 
@@ -84,7 +84,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
           object-fit: cover;
           border: 1px solid #eee;
 
-          @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+          @media (min-width: $RESPONSIVE_BREAKPOINT) {
             width: $TEASER_WIDTH;
             height: 130px;
             transform: translateY(3px);
@@ -98,7 +98,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
         top: 0;
         bottom: 0;
 
-        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        @media (min-width: $RESPONSIVE_BREAKPOINT) {
           flex: 1 1;
           margin-left: $INFOBOX_LEFT_MARGIN;
           padding-top: 0;
@@ -108,7 +108,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
         }
 
         .info {
-          @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+          @media (min-width: $RESPONSIVE_BREAKPOINT) {
             flex: 1 1;
             overflow-y: scroll;
           }
@@ -131,7 +131,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
           padding-top: 10px;
           font-size: 0.9rem;
 
-          @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+          @media (min-width: $RESPONSIVE_BREAKPOINT) {
             position: absolute;
             bottom: 0;
             display: flex;
@@ -155,7 +155,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
             @media print {
               display: none;
             }
-            @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+            @media (min-width: $RESPONSIVE_BREAKPOINT) {
               flex: 1 1;
             }
 
@@ -170,7 +170,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
             letter-spacing: -0.1rem;
             display: none;
 
-            @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+            @media (min-width: $RESPONSIVE_BREAKPOINT) {
               flex: 0 0;
               display: block;
               // padding-right: 10px;

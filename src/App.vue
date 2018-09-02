@@ -62,7 +62,7 @@ export default {
 html {
   font-size: 14px;
 
-  @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+  @media (min-width: $RESPONSIVE_BREAKPOINT) {
     font-size: 16px;
   }
 }
@@ -74,7 +74,7 @@ body {
   font-family: 'Merriweather', 'Microsoft Yahei', serif;
   background-color: $BACKGROUND_COLOR;
 
-  @media only screen and (min-width: $MAX_PAGE_WIDTH) {
+  @media (min-width: $MAX_PAGE_WIDTH) {
     width: $MAX_PAGE_WIDTH;
   }
 
@@ -88,7 +88,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+  @media (min-width: $RESPONSIVE_BREAKPOINT) {
     flex-direction: row;
   }
 
@@ -97,7 +97,7 @@ body {
     font-size: 3rem;
     text-align: center;
 
-    @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+    @media (min-width: $RESPONSIVE_BREAKPOINT) {
       text-align: left;
     }
 
@@ -107,7 +107,7 @@ body {
       letter-spacing: 0.05em;
       display: block;
 
-      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media (min-width: $RESPONSIVE_BREAKPOINT) {
         display: inline-block;
       }
     }
@@ -120,7 +120,7 @@ body {
   position: relative;
   width: 100%;
 
-  @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+  @media (min-width: $RESPONSIVE_BREAKPOINT) {
     flex-direction: row;
   }
 

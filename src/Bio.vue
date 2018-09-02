@@ -29,7 +29,7 @@ export default {
   display: flex;
   flex-direction: column;
 
-  @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+  @media (min-width: $RESPONSIVE_BREAKPOINT) {
     margin: 30px 50px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -44,7 +44,7 @@ export default {
     border: 1px solid #eee;
     margin: auto;
 
-    @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+    @media (min-width: $RESPONSIVE_BREAKPOINT) {
       flex-direction: row;
       margin: 0;
     }
@@ -58,7 +58,7 @@ export default {
     justify-content: center;
     margin-top: 30px;
 
-    @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+    @media (min-width: $RESPONSIVE_BREAKPOINT) {
       margin-top: 0;
       max-width: 72%;
     }
@@ -77,7 +77,7 @@ export default {
       -ms-hyphens: auto;
       hyphens: auto;
 
-      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media (min-width: $RESPONSIVE_BREAKPOINT) {
         text-align: left;
       }
 
