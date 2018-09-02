@@ -10,7 +10,6 @@
         <experience></experience>
         <publications></publications>
         <awards></awards>
-        <skills></skills>
         <contact></contact>
       </div>
       <div class="toc">
@@ -18,7 +17,6 @@
           <li><a>EXPERIENCE</a></li>
           <li><a>PUBLICATIONS</a></li>
           <li><a>AWARDS</a></li>
-          <li><a>SKILLS</a></li>
           <li><a>CONTACT</a></li>
         </ul>
       </div>
@@ -33,7 +31,6 @@ import Bio from './Bio'
 import Experience from './sections/Experience'
 import Publications from './sections/Publications'
 import Awards from './sections/Awards'
-import Skills from './sections/Skills'
 import Contact from './sections/Contact'
 import Footer from './Footer'
 
@@ -55,7 +52,6 @@ export default {
     Experience,
     Publications,
     Awards,
-    Skills,
     Contact,
     'page-footer': Footer
   }
