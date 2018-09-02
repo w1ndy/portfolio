@@ -22,7 +22,7 @@ export default {
       title: 'Research Intern',
       affiliation: '<a href="http://icity.jd.com/">Urban Computing Lab, JD Finance</a>',
       description: 'Supervised by <a href="https://scholar.google.com/citations?user=juUcdgYAAAAJ&hl=en&oi=ao">Prof. Yu Zheng</a>',
-      logo: 'src/assets/jdf.png'
+      logo: require('./assets/jdf.png')
     },
     {
       date: 'Sep. 2016 - Present',
@@ -30,7 +30,7 @@ export default {
       title: 'Ph.D. Student',
       affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
       description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
-      logo: 'src/assets/zju.png'
+      logo: require('./assets/zju.png')
     },
     {
       date: 'Jul. 2015 - Mar. 2016',
@@ -38,7 +38,7 @@ export default {
       title: 'Research Intern',
       affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
       description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
-      logo: 'src/assets/zju.png'
+      logo: require('./assets/zju.png')
     },
     {
       date: 'Sep. 2012 - Jun. 2016',
@@ -46,13 +46,13 @@ export default {
       title: 'Undergraduate Student',
       affiliation: '<a href="http://tsxt.sdu.edu.cn">Taishan Honored College, Shandong University</a>',
       description: 'Computer Science and Technology',
-      logo: 'src/assets/sdu.png'
+      logo: require('./assets/sdu.png')
     }
   ],
 
   publications: [
     {
-      teaser: 'src/assets/srvis.png',
+      teaser: require('./assets/srvis.png'),
       title: 'SRVis: Towards Better Spatial Integration in Ranking Visualization',
       authors: '<b>Di Weng</b>, Ran Chen, Zikun Deng, Feiran Wu, Jingmin Chen, Yingcai Wu',
       journal: 'IEEE TVCG 25.1 (2019), <i>To Appear</i>. (IEEE InfoVis 2018)',
@@ -60,7 +60,7 @@ export default {
       // video: '#'
     },
     {
-      teaser: 'src/assets/reach.png',
+      teaser: require('./assets/reach.png'),
       title: 'HomeFinder Revisited: Finding Ideal Homes with Reachability-Centric Multi-Criteria Decision Making',
       authors: '<b>Di Weng</b>, Heming Zhu, Jie Bao, Yu Zheng, Yingcai Wu',
       journal: 'Proc. of the ACM CHI 2018',
@@ -69,7 +69,7 @@ export default {
       doi: '10.1145/3173574.3173821'
     },
     {
-      teaser: 'src/assets/smartadp.png',
+      teaser: require('./assets/smartadp.png'),
       title: 'SmartAdP: Visual Analytics of Large-scale Taxi Trajectories for Select&shy;ing Billboard Locations',
       authors: 'Dongyu Liu, <b>Di Weng</b>, Yuhong Li, Jie Bao, Yu Zheng, Huamin Qu, Yingcai Wu',
       journal: 'IEEE TVCG 23.1 (2017): 1-10. (IEEE VAST 2016)',
