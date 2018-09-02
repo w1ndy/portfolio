@@ -1,6 +1,6 @@
 <template>
   <div class="bio">
-    <img :src="pic" class="portrait">
+    <img :src="pic" alt="the profile picture" class="portrait">
     <div class="description">
       <span v-html="bio" lang="en"></span>
     </div>

@@ -3,7 +3,7 @@
     <h2>Publications</h2>
     <ul>
       <li v-for="pub in publications" :key="pub.title">
-        <div class="teaser"><img :src="pub.teaser"></div>
+        <div class="teaser"><img :src="pub.teaser" alt="publication teaser image"></div>
         <div class="info-cont">
           <div class="info">
             <div class="title" v-html="pub.title"></div>
