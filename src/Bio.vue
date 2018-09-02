@@ -1,6 +1,6 @@
 <template>
   <div class="bio">
-    <img src="src/assets/me.jpg" class="portrait">
+    <img :src="pic" class="portrait">
     <div class="description">
       <span v-html="bio" lang="en"></span>
     </div>
@@ -8,11 +8,14 @@
 </template>
 
 <script>
+import conf from './config'
+
 export default {
   name: 'bio',
   data () {
     return {
-      bio: 'I’m a 2nd-year Com&shy;puter Sci&shy;ence Ph.D. stu&shy;dent study&shy;ing at <a href="#">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Jul, 2018) and a <a href="#">ZJU&shy;VIS</a> group mem&shy;ber su&shy;per&shy;vised by <a href="#">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.'
+      pic: conf.profilePic,
+      bio: conf.bio
     }
   }
 }

@@ -15,44 +15,12 @@
 </template>
 
 <script>
+import conf from '../config'
 export default {
   name: 'experience',
   data () {
     return {
-      experience: [
-        {
-          date: 'Apr. 2018 - Present',
-          location: '<a href="https://goo.gl/maps/4PtB3kMQoSK2">Beijing, China</a>',
-          title: 'Research Intern',
-          affiliation: '<a href="http://icity.jd.com/">Urban Computing Lab, JD Finance</a>',
-          description: 'Supervised by <a href="https://scholar.google.com/citations?user=juUcdgYAAAAJ&hl=en&oi=ao">Prof. Yu Zheng</a>',
-          logo: 'src/assets/jdf.png'
-        },
-        {
-          date: 'Sep. 2016 - Present',
-          location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
-          title: 'Ph.D. Student',
-          affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
-          description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
-          logo: 'src/assets/zju.png'
-        },
-        {
-          date: 'Jul. 2015 - Mar. 2016',
-          location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
-          title: 'Research Intern',
-          affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
-          description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
-          logo: 'src/assets/zju.png'
-        },
-        {
-          date: 'Sep. 2012 - Jun. 2016',
-          location: '<a href="https://goo.gl/maps/79eWcBKJHLJ2">Jinan, China</a>',
-          title: 'Undergraduate Student',
-          affiliation: '<a href="http://tsxt.sdu.edu.cn">Taishan Honored College, Shandong University</a>',
-          description: 'Computer Science and Technology',
-          logo: 'src/assets/sdu.png'
-        }
-      ]
+      experience: conf.experience
     }
   }
 }

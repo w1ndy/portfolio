@@ -12,14 +12,16 @@
 </template>
 
 <script>
+import conf from './config'
+
 export default {
   name: 'page-footer',
   data () {
     return {
-      updatedDate: 'Aug. 11, 2018',
+      updatedDate: UPDATE_DATE,
       source: 'https://github.com/w1ndy/portfolio',
-      copyright: 'Di Weng',
-      url: 'https://dweng.io'
+      copyright: conf.name,
+      url: conf.url
     }
   },
   methods: {

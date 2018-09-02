@@ -11,20 +11,13 @@
 </template>
 
 <script>
+import conf from '../config'
+
 export default {
   name: 'contact',
   data () {
     return {
-      contact: [
-        {
-          type: 'Address',
-          info: 'Rm. 408-2, Mengminwei Bd., Zijingang Campus of Zhejiang University<br>866th, Yuhangtang Rd., Xihu District, Hangzhou, Zhejiang, China. 310054'
-        },
-        {
-          type: 'Email',
-          info: `<pre>'mystery.' + 'wd' + '@gmail.com'</pre>`
-        }
-      ]
+      contact: conf.contact
     }
   }
 }

@@ -16,34 +16,13 @@
 </template>
 
 <script>
+import conf from '../config'
+
 export default {
   name: 'awards',
   data () {
     return {
-      awards: [
-        {
-          year: 2015,
-          entries: [
-            {
-              where: 'COMAP Mathematical Contest in Modelling',
-              what: 'Honorable Mention'
-            }
-          ]
-        },
-        {
-          year: 2014,
-          entries: [
-            {
-              where: 'ACM-ICPC China Beijing Invitational Programming Contest',
-              what: 'Bronze'
-            },
-            {
-              where: 'ACM-ICPC China Shandong Provincial Programming Contest',
-              what: 'Silver'
-            }
-          ]
-        }
-      ]
+      awards: conf.awards
     }
   }
 }

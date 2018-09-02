@@ -7,17 +7,23 @@
 </template>
 
 <script>
+import conf from './config'
+
+const SocialMediaSources = [
+  { key: 'github', cls: 'fa-github' },
+  { key: 'twitter', cls: 'fa-twitter' },
+  { key: 'instagram', cls: 'fa-instagram' },
+  { key: 'linkedin', cls: 'fa-linkedin' },
+  { key: 'blogger', cls: 'fa-blogger' },
+]
+
 export default {
   name: 'social-media',
   data () {
     return {
-      socialMedia: [
-        { cls: 'fa-github', href: '#' },
-        { cls: 'fa-twitter', href: '#' },
-        { cls: 'fa-instagram', href: '#' },
-        { cls: 'fa-linkedin', href: '#' },
-        { cls: 'fa-blogger', href: '#' }
-      ]
+      socialMedia: SocialMediaSources
+        .filter((v, k) => v.key in conf)
+        .map((v, k) => ({ cls: v.cls, href: conf[v.key] }))
     }
   }
 }

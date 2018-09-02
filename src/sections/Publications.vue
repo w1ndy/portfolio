@@ -27,39 +27,12 @@
 </template>
 
 <script>
+import conf from '../config'
 export default {
   name: 'publications',
   data () {
     return {
-      publications: [
-        {
-          teaser: 'src/assets/srvis.png',
-          title: 'SRVis: Towards Better Spatial Integration in Ranking Visualization',
-          authors: '<b>Di Weng</b>, Ran Chen, Zikun Deng, Feiran Wu, Jingmin Chen, Yingcai Wu',
-          journal: 'IEEE TVCG 25.1 (2019), <i>To Appear</i>. (IEEE InfoVis 2018)',
-          pdf: '#',
-          video: '#'
-        },
-        {
-          teaser: 'src/assets/reach.png',
-          title: 'HomeFinder Revisited: Finding Ideal Homes with Reachability-Centric Multi-Criteria Decision Making',
-          authors: '<b>Di Weng</b>, Heming Zhu, Jie Bao, Yu Zheng, Yingcai Wu',
-          journal: 'Proc. of the ACM CHI 2018',
-          pdf: '#',
-          video: '#',
-          doi: '10.1145/3173574.3173821'
-        },
-        {
-          teaser: 'src/assets/smartadp.png',
-          title: 'SmartAdP: Visual Analytics of Large-scale Taxi Trajectories for Select&shy;ing Billboard Locations',
-          authors: 'Dongyu Liu, <b>Di Weng</b>, Yuhong Li, Jie Bao, Yu Zheng, Huamin Qu, Yingcai Wu',
-          journal: 'IEEE TVCG 23.1 (2017): 1-10. (IEEE VAST 2016)',
-          pdf: '#',
-          video: '#',
-          doi: '10.1109/TVCG.2016.2598432',
-          demo: '#'
-        }
-      ]
+      publications: conf.publications
     }
   }
 }

@@ -34,16 +34,14 @@ import Awards from './sections/Awards'
 import Contact from './sections/Contact'
 import Footer from './Footer'
 
+import conf from './config'
+
 export default {
   name: 'app',
   data () {
     return {
-      name: 'Di Weng',
-      altName: '翁荻',
-      pdf: '#',
-      source: '#',
-      url: 'https://dweng.io',
-      section: 0
+      name: conf.name,
+      altName: conf.altName
     }
   },
   components: {
