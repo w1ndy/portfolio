@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../def.scss";
 $CONTACT_SEPARATOR_SPACING: 10px;
 $CONTACT_LEFT_COLUMN_COLOR: #95a5a6;
 
@@ -43,29 +44,38 @@ $CONTACT_LEFT_COLUMN_COLOR: #95a5a6;
     font-weight: 300;
 
     .type {
-      display: flex;
-      flex-direction: row;
+      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        display: flex;
+        flex-direction: row;
+      }
 
       &:not(:first-child) {
         padding-top: 20px;
       }
 
       .type-title {
-        flex: 0 0 70px;
-        text-align: right;
         padding-right: $CONTACT_SEPARATOR_SPACING;
         color: $CONTACT_LEFT_COLUMN_COLOR;
+
+        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+          flex: 0 0 70px;
+          text-align: right;
+        }
       }
 
       .info {
         flex: 1 1;
         list-style: none;
-        padding: 0 0 0 $CONTACT_SEPARATOR_SPACING;
         margin: 0;
-        // border-left: 1px solid $CONTACT_LEFT_COLUMN_COLOR;
+
+        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+          padding: 0 0 0 $CONTACT_SEPARATOR_SPACING;
+        }
 
         pre {
           margin: 0;
+          white-space: pre-wrap;
+          word-break: break-all;
         }
       }
     }
