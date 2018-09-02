@@ -50,8 +50,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../def.scss";
 $AWARDS_SEPARATOR_SPACING: 20px;
-$AWARDS_LEFT_COLUMN_COLOR: #95a5a6;
+$AWARDS_YEAR_COLOR: #95a5a6;
 
 .awards {
   .years {
@@ -62,26 +63,41 @@ $AWARDS_LEFT_COLUMN_COLOR: #95a5a6;
     font-weight: 300;
 
     .year {
-      display: flex;
-      flex-direction: row;
+      @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+        display: flex;
+        flex-direction: row;
+      }
 
       &:not(:first-child) {
         padding-top: 20px;
       }
 
       .year-title {
-        flex: 0 0 70px;
-        text-align: right;
-        padding-right: $AWARDS_SEPARATOR_SPACING;
-        color: $AWARDS_LEFT_COLUMN_COLOR;
+        color: $AWARDS_YEAR_COLOR;
+        padding-bottom: 5px;
+
+        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+          flex: 0 0 70px;
+          text-align: right;
+          padding-right: $AWARDS_SEPARATOR_SPACING;
+          padding-bottom: 0px;
+        }
       }
 
       .entries {
         flex: 1 1;
         list-style: none;
         padding: 0 0 0 $AWARDS_SEPARATOR_SPACING;
-        margin: 0;
-        border-left: 1px solid $AWARDS_LEFT_COLUMN_COLOR;
+        margin: 0 0 0 $AWARDS_SEPARATOR_SPACING / 2;
+        border-left: 1px solid $AWARDS_YEAR_COLOR;
+
+        @media only screen and (min-width: $RESPONSIVE_BREAKPOINT) {
+          margin: 0;
+        }
+
+        .entry:not(:last-child) {
+          padding-bottom: 10px;
+        }
 
         .where::after {
           content: '·';
