@@ -84,7 +84,7 @@ export default {
 html {
   font-size: 14px;
 
-  @media (min-width: $RESPONSIVE_BREAKPOINT) {
+  @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
     font-size: 16px;
   }
 }
@@ -96,7 +96,7 @@ body {
   font-family: 'Merriweather', 'Microsoft Yahei', serif;
   background-color: $BACKGROUND_COLOR;
 
-  @media (min-width: $MAX_PAGE_WIDTH) {
+  @media print, (min-width: $MAX_PAGE_WIDTH) {
     width: $MAX_PAGE_WIDTH;
   }
 
@@ -110,7 +110,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $RESPONSIVE_BREAKPOINT) {
+  @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
     flex-direction: row;
   }
 
@@ -119,7 +119,7 @@ body {
     font-size: 3rem;
     text-align: center;
 
-    @media (min-width: $RESPONSIVE_BREAKPOINT) {
+    @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
       text-align: left;
     }
 
@@ -129,7 +129,7 @@ body {
       letter-spacing: 0.05em;
       display: block;
 
-      @media (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
         display: inline-block;
       }
     }
@@ -142,7 +142,7 @@ body {
   position: relative;
   width: 100%;
 
-  @media (min-width: $RESPONSIVE_BREAKPOINT) {
+  @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
     flex-direction: row;
   }
 
@@ -178,6 +178,7 @@ body {
         letter-spacing: 1px;
         transition: box-shadow 200ms;
         transform: scale(1, 0.93);
+        cursor: pointer;
 
         a {
           transition: color 200ms;

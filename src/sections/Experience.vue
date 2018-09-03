@@ -44,7 +44,7 @@ $LOGO_RIGHT_PADDING: 25px;
     padding-bottom: 30px;
 
 
-    @media (min-width: $RESPONSIVE_BREAKPOINT) {
+    @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
       margin-left: 180px;
     }
   }
@@ -57,7 +57,7 @@ $LOGO_RIGHT_PADDING: 25px;
     font-weight: 300;
     box-sizing: content-box;
 
-    @media (min-width: $RESPONSIVE_BREAKPOINT) {
+    @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
       padding-right: $LOGO_WIDTH + $LOGO_RIGHT_PADDING;
     }
 
@@ -100,7 +100,7 @@ $LOGO_RIGHT_PADDING: 25px;
         color: #95a5a6;
       }
 
-      @media (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
         position: absolute;
         right: 100%;
         width: 180px;
@@ -110,7 +110,7 @@ $LOGO_RIGHT_PADDING: 25px;
     }
 
     .location {
-      @media (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
         padding-top: 25px;
       }
     }
@@ -119,7 +119,7 @@ $LOGO_RIGHT_PADDING: 25px;
       font-weight: 700;
       padding-top: 10px;
 
-      @media (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
         padding-top: 0px;
       }
     }
@@ -127,7 +127,7 @@ $LOGO_RIGHT_PADDING: 25px;
     .logo {
       display: none;
 
-      @media (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
         display: block;
         position: absolute;
         right: $LOGO_RIGHT_PADDING;

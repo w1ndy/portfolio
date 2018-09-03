@@ -42,7 +42,7 @@ export default {
     display: none;
   }
 
-  @media (min-width: $RESPONSIVE_BREAKPOINT) {
+  @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
     flex-basis: 250px;
     margin: 0;
     text-align: right;
@@ -56,7 +56,7 @@ export default {
     transform: translateY(-50%);
     font-size: 2.2rem;
 
-    @media (min-width: $RESPONSIVE_BREAKPOINT) {
+    @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
       right: 0;
     }
 

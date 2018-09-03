@@ -42,7 +42,7 @@ $AWARDS_YEAR_COLOR: #95a5a6;
     font-weight: 300;
 
     .year {
-      @media (min-width: $RESPONSIVE_BREAKPOINT) {
+      @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
         display: flex;
         flex-direction: row;
       }
@@ -55,7 +55,7 @@ $AWARDS_YEAR_COLOR: #95a5a6;
         color: $AWARDS_YEAR_COLOR;
         padding-bottom: 5px;
 
-        @media (min-width: $RESPONSIVE_BREAKPOINT) {
+        @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
           flex: 0 0 70px;
           text-align: right;
           padding-right: $AWARDS_SEPARATOR_SPACING;
@@ -70,7 +70,7 @@ $AWARDS_YEAR_COLOR: #95a5a6;
         margin: 0 0 0 $AWARDS_SEPARATOR_SPACING / 2;
         border-left: 1px solid $AWARDS_YEAR_COLOR;
 
-        @media (min-width: $RESPONSIVE_BREAKPOINT) {
+        @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
           margin: 0;
         }
 
