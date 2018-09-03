@@ -105,7 +105,7 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new UglifyJsPlugin(),
     new CopyWebpackPlugin([
-      { from: './index.html', to: './public/' }
+      { from: path.resolve(__dirname, './index.html'), to: '../' }
     ])
   ])
 }
