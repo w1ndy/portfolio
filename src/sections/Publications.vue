@@ -5,7 +5,7 @@
       <li v-for="pub in publications" :key="pub.title">
         <div class="teaser"><img :src="pub.teaser" alt="publication teaser image"></div>
         <div class="info-cont">
-          <div class="info">
+          <div class="info" :title="`${pub.title}; ${pub.authors}; ${pub.journal}`">
             <div class="title" v-html="pub.title"></div>
             <div class="authors" v-html="pub.authors"></div>
             <div class="journal" v-html="pub.journal"></div>
@@ -110,7 +110,6 @@ $INFOBOX_LEFT_MARGIN: 20px;
         .info {
           @media (min-width: $RESPONSIVE_BREAKPOINT) {
             flex: 1 1;
-            overflow-y: scroll;
           }
 
           .title {
