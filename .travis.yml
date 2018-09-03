@@ -1,0 +1,22 @@
+language: node_js
+
+before_script:
+- npm install
+
+script:
+- npm run build
+
+branches:
+  only:
+  - master
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: public
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  repo: w1ndy/w1ndy.github.io
+  target_branch: master
+  fqdn: dweng.org
