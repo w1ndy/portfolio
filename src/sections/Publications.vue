@@ -12,9 +12,9 @@
           </div>
           <div class="links">
             <div class="supp">
-              <a v-if="pub.pdf" :href="pub.pdf"><i class="fas fa-file-pdf"></i>PDF</a>
-              <a v-if="pub.video" :href="pub.video"><i class="fas fa-video"></i>Video</a>
-              <a v-if="pub.demo" :href="pub.demo"><i class="fas fa-desktop"></i>Demo</a>
+              <a v-if="pub.pdf" :href="pub.pdf"><font-awesome-icon icon="file-pdf"></font-awesome-icon>PDF</a>
+              <a v-if="pub.video" :href="pub.video"><font-awesome-icon icon="video"></font-awesome-icon>Video</a>
+              <a v-if="pub.demo" :href="pub.demo"><font-awesome-icon icon="desktop"></font-awesome-icon>Demo</a>
             </div>
             <div class="doi">
               <a v-if="pub.doi" :href="'https://dx.doi.org/' + pub.doi" class="doi">{{ pub.doi }}</a>
@@ -119,7 +119,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
           .authors, .journal {
             font-weight: 300;
             color: #95a5a6;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
           }
         }
 
@@ -128,7 +128,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
           color: #95a5a6;
           // height: 1.5rem;
           padding-top: 10px;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
 
           @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
             position: absolute;
@@ -145,7 +145,7 @@ $INFOBOX_LEFT_MARGIN: 20px;
             text-decoration: none;
             display: inline-block;
 
-            i {
+            svg {
               padding-right: 5px;
             }
           }

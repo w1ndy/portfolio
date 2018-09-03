@@ -1,7 +1,9 @@
 <template>
   <div class="social-media">
     <div class="sm-cont">
-      <a v-for="sm in socialMedia" :key="sm.cls" class="fab" :class="[ sm.cls ]" :href="sm.href"></a>
+      <a v-for="sm in socialMedia" :title="sm.key" :key="sm.cls" :href="sm.href">
+        <font-awesome-icon :icon="['fab', sm.cls]"></font-awesome-icon>
+      </a>
     </div>
   </div>
 </template>
@@ -10,11 +12,11 @@
 import conf from './config'
 
 const SocialMediaSources = [
-  { key: 'github', cls: 'fa-github' },
-  { key: 'twitter', cls: 'fa-twitter' },
-  { key: 'instagram', cls: 'fa-instagram' },
-  { key: 'linkedin', cls: 'fa-linkedin' },
-  { key: 'blogger', cls: 'fa-blogger' },
+  { key: 'github', cls: 'github' },
+  { key: 'twitter', cls: 'twitter' },
+  { key: 'instagram', cls: 'instagram' },
+  { key: 'linkedin', cls: 'linkedin' },
+  { key: 'blogger', cls: 'blogger' },
 ]
 
 export default {
@@ -23,7 +25,7 @@ export default {
     return {
       socialMedia: SocialMediaSources
         .filter((v, k) => v.key in conf)
-        .map((v, k) => ({ cls: v.cls, href: conf[v.key] }))
+        .map((v, k) => ({ key: v.key, cls: v.cls, href: conf[v.key] }))
     }
   }
 }
