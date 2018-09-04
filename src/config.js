@@ -57,7 +57,8 @@ export default {
       authors: '<b>Di Weng</b>, Ran Chen, Zikun Deng, Feiran Wu, Jingmin Chen, Yingcai Wu',
       journal: 'IEEE TVCG 25.1 (2019), <i>To Appear</i>. (IEEE InfoVis 2018)',
       pdf: 'http://zjuvis.org/files/srvis.pdf',
-      video: 'https://www.youtube.com/watch?v=lenSZci4gy4'
+      video: 'https://www.youtube.com/watch?v=lenSZci4gy4',
+      demo: 'http://zjuvis.org/srvis/'
     },
     {
       teaser: require('./assets/reach.png'),
