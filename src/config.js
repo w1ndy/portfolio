@@ -56,8 +56,8 @@ export default {
       title: 'SRVis: Towards Better Spatial Integration in Ranking Visualization',
       authors: '<b>Di Weng</b>, Ran Chen, Zikun Deng, Feiran Wu, Jingmin Chen, Yingcai Wu',
       journal: 'IEEE TVCG 25.1 (2019), <i>To Appear</i>. (IEEE InfoVis 2018)',
-      // pdf: '#',
-      // video: '#'
+      pdf: 'http://zjuvis.org/files/srvis.pdf',
+      video: 'https://www.youtube.com/watch?v=lenSZci4gy4'
     },
     {
       teaser: require('./assets/reach.png'),
@@ -74,7 +74,7 @@ export default {
       authors: 'Dongyu Liu, <b>Di Weng</b>, Yuhong Li, Jie Bao, Yu Zheng, Huamin Qu, Yingcai Wu',
       journal: 'IEEE TVCG 23.1 (2017): 1-10. (IEEE VAST 2016)',
       pdf: 'http://zjuvis.org/files/smartadp.pdf',
-      video: 'http://zjuvis.org/videos/smartadp.mp4',
+      video: 'https://www.youtube.com/watch?v=Nkdup4YcX0A',
       doi: '10.1109/TVCG.2016.2598432',
       demo: 'http://smartadp.zjuvis.org'
     }
