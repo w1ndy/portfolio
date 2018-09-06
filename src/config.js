@@ -13,7 +13,7 @@ export default {
   profilePic: require('./assets/me.jpg'),
 
   // Use &shy; to define where the hypenation will be inserted
-  bio: 'I’m a 2nd-year Com&shy;puter Sci&shy;ence Ph.D. stu&shy;dent study&shy;ing at <a href="#">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Jul, 2018) and a <a href="#">ZJU&shy;VIS</a> group mem&shy;ber su&shy;per&shy;vised by <a href="#">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.',
+  bio: 'I’m a 2nd-year Com&shy;puter Sci&shy;ence Ph.D. stu&shy;dent study&shy;ing at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Jul, 2018) and a <a href="http://zjuvis.org">ZJU&shy;VIS</a> group mem&shy;ber su&shy;per&shy;vised by <a href="http://ycwu.org">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.',
 
   experience: [
     {

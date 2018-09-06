@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const SitemapPlugin = require('sitemap-webpack-plugin').default
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
@@ -106,6 +107,10 @@ if (process.env.NODE_ENV === 'production') {
     new UglifyJsPlugin(),
     new CopyWebpackPlugin([
       { from: path.resolve(__dirname, './index.html'), to: '../' }
-    ])
+    ]),
+    new SitemapPlugin('https://dweng.org', ['/'], {
+      skipGzip: true,
+      lastMod: true
+    })
   ])
 }
