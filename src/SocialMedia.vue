@@ -16,7 +16,7 @@ const SocialMediaSources = [
   { key: 'twitter', cls: 'twitter' },
   { key: 'instagram', cls: 'instagram' },
   { key: 'linkedin', cls: 'linkedin' },
-  { key: 'blogger', cls: 'blogger' },
+  { key: 'medium', cls: 'medium' },
 ]
 
 export default {

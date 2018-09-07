@@ -1,6 +1,6 @@
 <template>
   <div class="bio">
-    <img :src="pic" alt="the profile picture" class="portrait">
+    <img :src="pic" :srcset="`${pic2x} 2x`" alt="the profile picture" class="portrait">
     <div class="description">
       <span v-html="bio" lang="en"></span>
     </div>
@@ -15,6 +15,7 @@ export default {
   data () {
     return {
       pic: conf.profilePic,
+      pic2x: conf.profilePic2x,
       bio: conf.bio
     }
   }

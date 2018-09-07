@@ -8,7 +8,7 @@
         <div class="title" v-html="e.title">Research Intern</div>
         <div class="affiliation" v-html="e.affiliation">Urban Computing Lab, JD Finance</div>
         <div class="description" v-html="e.description">Supervised by Prof. Yu Zheng</div>
-        <img class="logo" :src="e.logo" alt="affiliation logo">
+        <img class="logo" :src="e.logo" :srcset="`${e.logo2x} 2x`" alt="affiliation logo">
       </div>
     </div>
   </section>
