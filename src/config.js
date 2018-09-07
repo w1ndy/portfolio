@@ -64,7 +64,7 @@ export default {
       journal: 'IEEE TVCG 25.1 (2019), <i>To Appear</i>. (IEEE InfoVis 2018)',
       pdf: 'http://zjuvis.org/files/srvis.pdf',
       video: 'https://www.youtube.com/watch?v=lenSZci4gy4',
-      demo: 'http://zjuvis.org/srvis/'
+      demo: 'https://srvis.zjuvis.org/'
     },
     {
       teaser: require('./assets/reach.png'),
@@ -85,7 +85,7 @@ export default {
       pdf: 'http://zjuvis.org/files/smartadp.pdf',
       video: 'https://www.youtube.com/watch?v=Nkdup4YcX0A',
       doi: '10.1109/TVCG.2016.2598432',
-      demo: 'http://smartadp.zjuvis.org'
+      demo: 'http://smartadp.urban-computing.cn/'
     }
   ],
 
