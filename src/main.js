@@ -21,8 +21,12 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueScrollSpy, {
   easing: Easing.Cubic.In
 })
-
+console.log('initializing...')
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
+  mounted () {
+    console.log('dispatching render event!')
+    document.dispatchEvent(new Event('render-event'))
+  }
 })

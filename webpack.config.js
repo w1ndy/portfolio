@@ -2,8 +2,11 @@ var path = require('path')
 var webpack = require('webpack')
 
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
 const SitemapPlugin = require('sitemap-webpack-plugin').default
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 
 module.exports = {
   entry: './src/main.js',
@@ -111,6 +114,23 @@ if (process.env.NODE_ENV === 'production') {
     new SitemapPlugin('https://dweng.org', ['/'], {
       skipGzip: true,
       lastMod: true
+    }),
+    new PrerenderSPAPlugin({
+      staticDir: path.join(__dirname),
+      routes: ['/'],
+      minify: {
+        collapseBooleanAttributes: true,
+        collapseWhitespace: true,
+        decodeEntities: true,
+        keepClosingSlash: true,
+        sortAttributes: true
+      },
+      renderer: new Renderer({
+        renderAfterDocumentEvent: 'render-event',
+        skipThirdPartyRequests: true,
+        consoleHandler: (route, msg) => console.log(route, msg),
+        args: ['--no-sandbox']
+      })
     })
   ])
 }
