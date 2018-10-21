@@ -14,18 +14,9 @@ export default {
   profilePic2x: require('./assets/me@2x.jpg'),
 
   // Use &shy; to define where the hypenation will be inserted
-  bio: 'I’m a 2nd-year Com&shy;puter Sci&shy;ence Ph.D. stu&shy;dent study&shy;ing at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Jul, 2018) and a <a href="http://zjuvis.org">ZJU&shy;VIS</a> group mem&shy;ber su&shy;per&shy;vised by <a href="http://ycwu.org">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.',
+  bio: 'I’m a 3rd-year Com&shy;puter Sci&shy;ence Ph.D. stu&shy;dent study&shy;ing at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Oct, 2018) and a <a href="http://zjuvis.org">ZJU&shy;VIS</a> group mem&shy;ber su&shy;per&shy;vised by <a href="http://ycwu.org">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.',
 
   experience: [
-    {
-      date: 'Apr. 2018 - Present',
-      location: '<a href="https://goo.gl/maps/4PtB3kMQoSK2">Beijing, China</a>',
-      title: 'Research Intern',
-      affiliation: '<a href="http://icity.jd.com/">Urban Computing Lab, JD Finance</a>',
-      description: 'Supervised by <a href="https://scholar.google.com/citations?user=juUcdgYAAAAJ&hl=en&oi=ao">Prof. Yu Zheng</a>',
-      logo: require('./assets/jdf.png'),
-      logo2x: require('./assets/jdf@2x.png')
-    },
     {
       date: 'Sep. 2016 - Present',
       location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
@@ -34,6 +25,15 @@ export default {
       description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
       logo: require('./assets/zju.png'),
       logo2x: require('./assets/zju@2x.png')
+    },
+    {
+      date: 'Apr. 2018 - Sep. 2018',
+      location: '<a href="https://goo.gl/maps/4PtB3kMQoSK2">Beijing, China</a>',
+      title: 'Research Intern',
+      affiliation: '<a href="http://icity.jd.com/">Urban Computing Lab, JD Finance</a>',
+      description: 'Supervised by <a href="https://scholar.google.com/citations?user=juUcdgYAAAAJ&hl=en&oi=ao">Prof. Yu Zheng</a>',
+      logo: require('./assets/jdf.png'),
+      logo2x: require('./assets/jdf@2x.png')
     },
     {
       date: 'Jul. 2015 - Mar. 2016',
@@ -64,7 +64,8 @@ export default {
       journal: 'IEEE TVCG 25.1 (2019), <i>To Appear</i>. (IEEE InfoVis 2018)',
       pdf: 'http://zjuvis.org/files/srvis.pdf',
       video: 'https://www.youtube.com/watch?v=lenSZci4gy4',
-      demo: 'https://srvis.zjuvis.org/'
+      demo: 'https://srvis.zjuvis.org/',
+      doi: '10.1109/TVCG.2018.2865126'
     },
     {
       teaser: require('./assets/reach.png'),
