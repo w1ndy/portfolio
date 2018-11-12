@@ -92,6 +92,15 @@ export default {
 
   awards: [
     {
+      year: 2018,
+      entries: [
+        {
+          where: 'Microsoft Research Asia',
+          what: 'Fellowship Nomination Award'
+        }
+      ]
+    },
+    {
       year: 2015,
       entries: [
         {
