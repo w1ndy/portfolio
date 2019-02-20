@@ -61,7 +61,7 @@ export default {
       teaser2x: require('./assets/srvis@2x.png'),
       title: 'SRVis: Towards Better Spatial Integration in Ranking Visualization',
       authors: '<b>Di Weng</b>, Ran Chen, Zikun Deng, Feiran Wu, Jingmin Chen, Yingcai Wu',
-      journal: 'IEEE TVCG 25.1 (2019), <i>To Appear</i>. (IEEE InfoVis 2018)',
+      journal: 'IEEE TVCG 25.1 (2019), 459-469. (IEEE InfoVis 2018)',
       pdf: 'http://zjuvis.org/files/srvis.pdf',
       video: 'https://www.youtube.com/watch?v=lenSZci4gy4',
       demo: 'https://srvis.zjuvis.org/',
