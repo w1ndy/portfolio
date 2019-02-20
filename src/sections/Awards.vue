@@ -7,7 +7,7 @@
         <ul class="entries">
           <li class="entry" v-for="e in y.entries" :key="e.where + e.what">
             <span class="where">{{ e.where }}</span>
-            <span class="what">{{ e.what }}</span>
+            <span class="what" v-if="e.what">{{ e.what }}</span>
           </li>
         </ul>
       </li>
@@ -78,7 +78,7 @@ $AWARDS_YEAR_COLOR: #95a5a6;
           padding-bottom: 10px;
         }
 
-        .where::after {
+        .what::before {
           content: '·';
           padding: 0 8px;
         }
