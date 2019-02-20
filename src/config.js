@@ -14,13 +14,13 @@ export default {
   profilePic2x: require('./assets/me@2x.jpg'),
 
   // Use &shy; to define where the hypenation will be inserted
-  bio: 'I’m a 3rd-year Com&shy;puter Sci&shy;ence Ph.D. stu&shy;dent study&shy;ing at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Oct, 2018) and a <a href="http://zjuvis.org">ZJU&shy;VIS</a> group mem&shy;ber su&shy;per&shy;vised by <a href="http://ycwu.org">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.',
+  bio: 'I’m a 3rd-year Com&shy;puter Sci&shy;ence Ph.D. can&shy;di&shy;date study&shy;ing at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Oct, 2018) and a <a href="http://zjuvis.org">ZJU&shy;VIS</a> group mem&shy;ber su&shy;per&shy;vised by <a href="http://ycwu.org">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.',
 
   experience: [
     {
       date: 'Sep. 2016 - Present',
       location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
-      title: 'Ph.D. Student',
+      title: 'Ph.D. Candidate',
       affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
       description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
       logo: require('./assets/zju.png'),
