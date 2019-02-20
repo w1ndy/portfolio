@@ -95,6 +95,9 @@ export default {
       year: 2018,
       entries: [
         {
+          where: 'Wen Chixiang Ph.D. Scholarship'
+        },
+        {
           where: 'Microsoft Research Asia',
           what: 'Fellowship Nomination Award'
         }
