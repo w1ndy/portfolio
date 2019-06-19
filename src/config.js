@@ -92,6 +92,15 @@ export default {
 
   awards: [
     {
+      year: 2016,
+      entries: [
+        {
+          where: 'Lu Zengyong CAD&CG Tech Award',
+          what: 'Third Prize'
+        }
+      ]
+    },
+    {
       year: 2018,
       entries: [
         {
