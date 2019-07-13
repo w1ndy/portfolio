@@ -3,7 +3,8 @@ var webpack = require('webpack')
 
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const SitemapPlugin = require('sitemap-webpack-plugin').default
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -27,37 +28,11 @@ module.exports = {
           'vue-style-loader',
           'css-loader',
           'sass-loader'
-        ],
-      },
-      {
-        test: /\.sass$/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-          'sass-loader?indentedSyntax'
-        ],
+        ]
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {
-            // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
-            // the "scss" and "sass" values for the lang attribute to the right configs here.
-            // other preprocessors should work out of the box, no loader config like this necessary.
-            'scss': [
-              'vue-style-loader',
-              'css-loader',
-              'sass-loader'
-            ],
-            'sass': [
-              'vue-style-loader',
-              'css-loader',
-              'sass-loader?indentedSyntax'
-            ]
-          }
-          // other vue-loader options go here
-        }
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
@@ -81,7 +56,6 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    noInfo: true,
     overlay: true
   },
   performance: {
@@ -89,6 +63,7 @@ module.exports = {
   },
   devtool: '#eval-source-map',
   plugins: [
+    new VueLoaderPlugin(),
     new webpack.DefinePlugin({
       UPDATE_DATE: `"${(new Date()).toLocaleDateString()}"`
     })
@@ -96,15 +71,20 @@ module.exports = {
 }
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
+  module.exports.mode = 'production'
+  module.exports.devtool = false
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'
       }
     }),
-    new UglifyJsPlugin(),
+    new TerserPlugin({
+      parallel: true,
+      terserOptions: {
+        ecma: 6,
+      },
+    }),
     new CopyWebpackPlugin([
       { from: path.resolve(__dirname, './index.html'), to: '../' }
     ]),

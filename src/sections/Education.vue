@@ -1,12 +1,13 @@
 <template>
-  <section class="experience">
-    <h2>Experience</h2>
+  <section class="education">
+    <h2>Education</h2>
     <div class="entry-cont">
-      <div class="entry" v-for="e in experience" :key="e.title + e.location">
+      <div class="entry" v-for="e in education" :key="e.title + e.location">
         <div class="date" v-html="e.date"></div>
         <div class="location" v-html="e.location"></div>
         <div class="title" v-html="e.title"></div>
         <div class="affiliation" v-html="e.affiliation"></div>
+        <div class="description" v-html="e.description"></div>
         <img class="logo" :src="e.logo" :srcset="`${e.logo2x} 2x`" alt="affiliation logo">
       </div>
     </div>
@@ -16,10 +17,10 @@
 <script>
 import conf from '../config'
 export default {
-  name: 'experience',
+  name: 'education',
   data () {
     return {
-      experience: conf.experience
+      education: conf.education
     }
   }
 }
@@ -31,7 +32,7 @@ export default {
 $LOGO_WIDTH: 120px;
 $LOGO_RIGHT_PADDING: 25px;
 
-.experience {
+.education {
   a {
     text-decoration: none;
   }
@@ -49,7 +50,7 @@ $LOGO_RIGHT_PADDING: 25px;
   }
 
   .entry {
-    padding-top: 30px;
+    padding-top: 50px;
     position: relative;
     padding-left: 30px;
     line-height: 1.6em;
@@ -88,7 +89,7 @@ $LOGO_RIGHT_PADDING: 25px;
       border-radius: 50%;
       border: 2px solid #7f8c8d;
       left: -1px;
-      top: 30px;
+      top: 50px;
       transform: translate(-50%, 50%);
     }
 

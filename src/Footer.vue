@@ -5,7 +5,7 @@
       <span class="print-visible">Last Updated @ {{ updatedDate }}</span>
       <span><a :href="source">Source Code</a></span>
       <span>Powered by <a href="https://vuejs.org">Vue.js</a> and ♡</span>
-      <span>© 2018 {{ copyright }}</span>
+      <span>© 2019 {{ copyright }}</span>
       <span class="print-visible"><a :href="url">{{ url }}</a></span>
     </p>
   </footer>

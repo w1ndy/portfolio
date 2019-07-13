@@ -14,17 +14,38 @@ export default {
   profilePic2x: require('./assets/me@2x.jpg'),
 
   // Use &shy; to define where the hypenation will be inserted
-  bio: 'I’m a 3rd-year Com&shy;puter Sci&shy;ence Ph.D. can&shy;di&shy;date study&shy;ing at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Oct, 2018) and a <a href="http://zjuidg.org">In&shy;ter&shy;ac&shy;tive Data Group</a> mem&shy;ber su&shy;per&shy;vised by <a href="http://ycwu.org">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.',
+  bio: 'I’m a 3rd-year Computer Science Ph.D. candidate studying Data Visualization at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a> (as of Jun, 2019) and a <a href="http://zjuidg.org">Interactive Data Group</a> member supervised by <a href="http://ycwu.org">Prof. Yingcai Wu</a>. My research interest lies in the <b>Visual Analytics of Massive Urban Data</b>.',
 
-  experience: [
+  education: [
     {
-      date: 'Sep. 2016 - Present',
+      date: 'Sep. 2016 - Jun. 2021',
       location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
       title: 'Ph.D. Candidate',
       affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
       description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
       logo: require('./assets/zju.png'),
       logo2x: require('./assets/zju@2x.png')
+    },
+    {
+      date: 'Sep. 2012 - Jun. 2016',
+      location: '<a href="https://goo.gl/maps/79eWcBKJHLJ2">Jinan, China</a>',
+      title: 'Undergraduate Student',
+      affiliation: '<a href="http://tsxt.sdu.edu.cn">Taishan Honored College, Shandong University</a>',
+      description: 'Bachelor in Computer Science and Technology',
+      logo: require('./assets/sdu.png'),
+      logo2x: require('./assets/sdu@2x.png')
+    }
+  ],
+
+  experience: [
+    {
+      date: 'Apr. 2019 - Jun. 2019',
+      location: '<a href="https://goo.gl/maps/4PtB3kMQoSK2">Hangzhou, China</a>',
+      title: 'Research Intern',
+      affiliation: '<a href="http://www.zhejianglab.com/">Zhejiang Lab</a>',
+      description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
+      logo: require('./assets/zjlab.jpg'),
+      logo2x: require('./assets/zjlab@2x.jpg')
     },
     {
       date: 'Apr. 2018 - Sep. 2018',
@@ -43,19 +64,17 @@ export default {
       description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
       logo: require('./assets/zju.png'),
       logo2x: require('./assets/zju@2x.png')
-    },
-    {
-      date: 'Sep. 2012 - Jun. 2016',
-      location: '<a href="https://goo.gl/maps/79eWcBKJHLJ2">Jinan, China</a>',
-      title: 'Undergraduate Student',
-      affiliation: '<a href="http://tsxt.sdu.edu.cn">Taishan Honored College, Shandong University</a>',
-      description: 'Computer Science and Technology',
-      logo: require('./assets/sdu.png'),
-      logo2x: require('./assets/sdu@2x.png')
     }
   ],
 
   publications: [
+    {
+      teaser: require('./assets/airvis.png'),
+      teaser2x: require('./assets/airvis@2x.png'),
+      title: 'AirVis: Visual Analytics of Air Pollution Propagation',
+      authors: 'Zikun Deng, <b>Di Weng</b>, Jiahui Chen, Ren Liu, Zhibing Wang, Jie Bao, Yu Zheng, Yingcai Wu',
+      journal: 'To appear in IEEE TVCG (IEEE VAST 2019)'
+    },
     {
       teaser: require('./assets/srvis.png'),
       teaser2x: require('./assets/srvis@2x.png'),

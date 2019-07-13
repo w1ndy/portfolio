@@ -66,7 +66,7 @@ export default {
 
     span {
       flex: 0 0;
-      font-style: italic;
+      // font-style: italic;
       font-weight: 300;
 
       font-size: 1.1rem;

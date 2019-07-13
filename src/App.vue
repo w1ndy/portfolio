@@ -7,6 +7,7 @@
     <bio></bio>
     <div class="content">
       <div class="content-cont" v-scroll-spy="{ time: 500, allowNoActive: false }">
+        <education></education>
         <experience></experience>
         <publications></publications>
         <awards></awards>
@@ -14,6 +15,7 @@
       </div>
       <div class="toc">
         <ul v-scroll-spy-active v-scroll-spy-link>
+          <li><a>EDUCATION</a></li>
           <li><a>EXPERIENCE</a></li>
           <li><a>PUBLICATIONS</a></li>
           <li><a>AWARDS</a></li>
@@ -28,6 +30,7 @@
 <script>
 import SocialMedia from './SocialMedia'
 import Bio from './Bio'
+import Education from './sections/Education'
 import Experience from './sections/Experience'
 import Publications from './sections/Publications'
 import Awards from './sections/Awards'
@@ -47,6 +50,7 @@ export default {
   components: {
     SocialMedia,
     Bio,
+    Education,
     Experience,
     Publications,
     Awards,
