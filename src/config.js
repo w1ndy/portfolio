@@ -14,7 +14,7 @@ export default {
   profilePic2x: require('./assets/me@2x.jpg'),
 
   // Use &shy; to define where the hypenation will be inserted
-  bio: 'I’m a 3rd-year Com&shy;puter Sci&shy;ence Ph.D. can&shy;di&shy;date study&shy;ing at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Oct, 2018) and a <a href="http://zjuvis.org">ZJU&shy;VIS</a> group mem&shy;ber su&shy;per&shy;vised by <a href="http://ycwu.org">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.',
+  bio: 'I’m a 3rd-year Com&shy;puter Sci&shy;ence Ph.D. can&shy;di&shy;date study&shy;ing at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhe&shy;jiang Uni&shy;ver&shy;sity</a> (as of Oct, 2018) and a <a href="http://zjuidg.org">In&shy;ter&shy;ac&shy;tive Data Group</a> mem&shy;ber su&shy;per&shy;vised by <a href="http://ycwu.org">Prof. Ying&shy;cai Wu</a>. My cur&shy;rent re&shy;search in&shy;ter&shy;est lies in the <b>Vis&shy;ual An&shy;a&shy;lyt&shy;ics of Mas&shy;sive Ur&shy;ban Data</b>.',
 
   experience: [
     {
@@ -62,9 +62,9 @@ export default {
       title: 'SRVis: Towards Better Spatial Integration in Ranking Visualization',
       authors: '<b>Di Weng</b>, Ran Chen, Zikun Deng, Feiran Wu, Jingmin Chen, Yingcai Wu',
       journal: 'IEEE TVCG 25.1 (2019), 459-469. (IEEE InfoVis 2018)',
-      pdf: 'http://zjuvis.org/files/srvis.pdf',
+      pdf: 'http://zjuidg.org/files/srvis.pdf',
       video: 'https://www.youtube.com/watch?v=lenSZci4gy4',
-      demo: 'https://srvis.zjuvis.org/',
+      demo: 'https://srvis.zjuidg.org/',
       doi: '10.1109/TVCG.2018.2865126'
     },
     {
@@ -73,7 +73,7 @@ export default {
       title: 'HomeFinder Revisited: Finding Ideal Homes with Reachability-Centric Multi-Criteria Decision Making',
       authors: '<b>Di Weng</b>, Heming Zhu, Jie Bao, Yu Zheng, Yingcai Wu',
       journal: 'Proc. of the ACM CHI 2018',
-      pdf: 'http://zjuvis.org/files/reach.pdf',
+      pdf: 'http://zjuidg.org/files/reach.pdf',
       video: 'https://youtu.be/WcjMXAfuygg',
       doi: '10.1145/3173574.3173821'
     },
@@ -83,7 +83,7 @@ export default {
       title: 'SmartAdP: Visual Analytics of Large-scale Taxi Trajectories for Select&shy;ing Billboard Locations',
       authors: 'Dongyu Liu, <b>Di Weng</b>, Yuhong Li, Jie Bao, Yu Zheng, Huamin Qu, Yingcai Wu',
       journal: 'IEEE TVCG 23.1 (2017): 1-10. (IEEE VAST 2016)',
-      pdf: 'http://zjuvis.org/files/smartadp.pdf',
+      pdf: 'http://zjuidg.org/files/smartadp.pdf',
       video: 'https://www.youtube.com/watch?v=Nkdup4YcX0A',
       doi: '10.1109/TVCG.2016.2598432',
       demo: 'http://smartadp.urban-computing.cn/'
