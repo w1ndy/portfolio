@@ -39,11 +39,18 @@ export default {
 
   experience: [
     {
+      date: 'Jul. 2019 - Jan. 2020',
+      location: '<a href="https://goo.gl/maps/chD2rAZPgic9m64P9">Melbourne, Australia</a>',
+      title: 'Visiting Research Student',
+      affiliation: '<a href="https://www.monash.edu/it/our-research/strengths/chic">CHIC, Monash University</a>',
+      logo: require('./assets/monash.png'),
+      logo2x: require('./assets/monash@2x.png')
+    },
+    {
       date: 'Apr. 2019 - Jun. 2019',
-      location: '<a href="https://goo.gl/maps/4PtB3kMQoSK2">Hangzhou, China</a>',
+      location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
       title: 'Research Intern',
       affiliation: '<a href="http://www.zhejianglab.com/">Zhejiang Lab</a>',
-      description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
       logo: require('./assets/zjlab.jpg'),
       logo2x: require('./assets/zjlab@2x.jpg')
     },
@@ -52,7 +59,6 @@ export default {
       location: '<a href="https://goo.gl/maps/4PtB3kMQoSK2">Beijing, China</a>',
       title: 'Research Intern',
       affiliation: '<a href="http://icity.jd.com/">Urban Computing Lab, JD Finance</a>',
-      description: 'Supervised by <a href="https://scholar.google.com/citations?user=juUcdgYAAAAJ&hl=en&oi=ao">Prof. Yu Zheng</a>',
       logo: require('./assets/jdf.png'),
       logo2x: require('./assets/jdf@2x.png')
     },
@@ -61,7 +67,6 @@ export default {
       location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
       title: 'Research Intern',
       affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
-      description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
       logo: require('./assets/zju.png'),
       logo2x: require('./assets/zju@2x.png')
     }
