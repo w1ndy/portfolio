@@ -6,6 +6,7 @@ const SitemapPlugin = require('sitemap-webpack-plugin').default
 const TerserPlugin = require('terser-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const PrerenderSpaPlugin = require('prerender-spa-plugin')
+const RobotstxtPlugin = require("robotstxt-webpack-plugin")
 
 module.exports = {
   entry: './src/main.js',
@@ -99,6 +100,17 @@ if (process.env.NODE_ENV === 'production') {
       renderer: new PrerenderSpaPlugin.PuppeteerRenderer({
         renderAfterDocumentEvent: 'render-event'
       })
+    }),
+    new RobotstxtPlugin({
+      filePath: '../robots.txt',
+      policy: [
+        {
+          userAgent: "*",
+          disallow: "/fuzzy-tribble/"
+        }
+      ],
+      sitemap: "https://dweng.org/dist/sitemap.xml",
+      host: "https://dweng.org"
     })
   ])
 }
