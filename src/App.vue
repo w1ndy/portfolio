@@ -15,11 +15,11 @@
       </div>
       <div class="toc">
         <ul v-scroll-spy-active v-scroll-spy-link>
-          <li><a>EDUCATION</a></li>
-          <li><a>EXPERIENCE</a></li>
-          <li><a>PUBLICATIONS</a></li>
-          <li><a>AWARDS</a></li>
-          <li><a>CONTACT</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#publications">PUBLICATIONS</a></li>
+          <li><a href="#awards">AWARDS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -44,7 +44,7 @@ export default {
   data () {
     return {
       name: conf.name,
-      altName: conf.altName
+      altName: conf.altName,
     }
   },
   components: {
@@ -187,6 +187,7 @@ body {
         a {
           transition: color 200ms;
           color: #bdc3c7;
+          text-decoration: none;
         }
 
         &.active {

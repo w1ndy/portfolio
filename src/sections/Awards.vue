@@ -1,5 +1,5 @@
 <template>
-  <section class="awards">
+  <section id="awards">
     <h2>Awards</h2>
     <ul class="years">
       <li class="year" v-for="y in awards" :key="y.year">
@@ -33,7 +33,7 @@ export default {
 $AWARDS_SEPARATOR_SPACING: 20px;
 $AWARDS_YEAR_COLOR: #95a5a6;
 
-.awards {
+#awards {
   .years {
     list-style: none;
     padding: 30px 0 0 0;

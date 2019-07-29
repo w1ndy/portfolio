@@ -1,5 +1,5 @@
 <template>
-  <section class="publications">
+  <section id="publications">
     <h2>Publications</h2>
     <ul>
       <li v-for="pub in publications" :key="pub.title">
@@ -43,7 +43,7 @@ export default {
 $TEASER_WIDTH: 200px;
 $INFOBOX_LEFT_MARGIN: 20px;
 
-.publications {
+#publications {
   ul {
     list-style: none;
     margin: 0;

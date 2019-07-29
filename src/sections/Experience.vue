@@ -1,5 +1,5 @@
 <template>
-  <section class="experience">
+  <section id="experience">
     <h2>Experience</h2>
     <div class="entry-cont">
       <div class="entry" v-for="e in experience" :key="e.title + e.location">
@@ -31,7 +31,7 @@ export default {
 $LOGO_WIDTH: 120px;
 $LOGO_RIGHT_PADDING: 25px;
 
-.experience {
+#experience {
   a {
     text-decoration: none;
   }

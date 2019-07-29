@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section id="contact">
     <h2>Contact</h2>
     <ul class="types">
       <li class="type" v-for="m in contact" :key="m.type">
@@ -28,7 +28,7 @@ export default {
 $CONTACT_SEPARATOR_SPACING: 10px;
 $CONTACT_LEFT_COLUMN_COLOR: #95a5a6;
 
-.contact {
+#contact {
   .types {
     list-style: none;
     padding: 30px 0 0 0;

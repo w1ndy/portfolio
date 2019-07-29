@@ -97,8 +97,21 @@ if (process.env.NODE_ENV === 'production') {
     new PrerenderSpaPlugin({
       staticDir: path.join(__dirname, 'public'),
       routes: ['/'],
+      minify: {
+        minifyCSS: true,
+      },
+      postProcess: route => {
+        route.html = route.html
+          .replace('id="main"', 'id="main" data-server-rendered="true"')
+        return route;
+      },
       renderer: new PrerenderSpaPlugin.PuppeteerRenderer({
-        renderAfterDocumentEvent: 'render-event'
+        injectProperty: '__PRERENDER_INJECTED',
+        renderAfterDocumentEvent: 'render-event',
+        defaultViewport: {
+          width: 1920,
+          height: 1080
+        }
       })
     }),
     new RobotstxtPlugin({

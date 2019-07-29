@@ -18,9 +18,11 @@ library.add(faMedium)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-Vue.use(VueScrollSpy, {
-  easing: Easing.Cubic.In
-})
+if (!window.__PRERENDER_INJECTED) {
+  Vue.use(VueScrollSpy, {
+    easing: Easing.Cubic.In
+  })
+}
 
 new Vue({
   el: '#app',

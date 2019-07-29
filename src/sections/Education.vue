@@ -1,5 +1,5 @@
 <template>
-  <section class="education">
+  <section id="education">
     <h2>Education</h2>
     <div class="entry-cont">
       <div class="entry" v-for="e in education" :key="e.title + e.location">
@@ -32,7 +32,7 @@ export default {
 $LOGO_WIDTH: 120px;
 $LOGO_RIGHT_PADDING: 25px;
 
-.education {
+#education {
   a {
     text-decoration: none;
   }
