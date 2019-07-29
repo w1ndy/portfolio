@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const SitemapPlugin = require('sitemap-webpack-plugin').default
 const TerserPlugin = require('terser-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const PrerenderSpaPlugin = require('prerender-spa-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -91,6 +92,13 @@ if (process.env.NODE_ENV === 'production') {
     new SitemapPlugin('https://dweng.org', ['/'], {
       skipGzip: true,
       lastMod: true
+    }),
+    new PrerenderSpaPlugin({
+      staticDir: path.join(__dirname, 'public'),
+      routes: ['/'],
+      renderer: new PrerenderSpaPlugin.PuppeteerRenderer({
+        renderAfterDocumentEvent: 'render-event'
+      })
     })
   ])
 }
