@@ -80,7 +80,8 @@ export default {
       authors: 'Zikun Deng, <b>Di Weng</b>, Jiahui Chen, Ren Liu, Zhibing Wang, Jie Bao, Yu Zheng, Yingcai Wu',
       journal: 'To appear in IEEE TVCG (IEEE VAST 2019)',
       pdf: 'https://zjuidg.org/files/AirVis.pdf',
-      video: 'https://youtu.be/orjRmmGVT-4'
+      video: 'https://youtu.be/orjRmmGVT-4',
+      doi: '10.1109/TVCG.2019.2934670'
     },
     {
       teaser: require('./assets/srvis.png'),
