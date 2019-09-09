@@ -42,7 +42,7 @@ export default {
       date: 'Jul. 2019 - Jan. 2020',
       location: '<a href="https://goo.gl/maps/chD2rAZPgic9m64P9">Melbourne, Australia</a>',
       title: 'Visiting Research Student',
-      affiliation: '<a href="https://www.monash.edu/it/our-research/strengths/chic">CHIC, Monash University</a>',
+      affiliation: '<a href="https://www.monash.edu/it/our-research/strengths/chic">Immersive Analytics Lab, Monash University</a>',
       logo: require('./assets/monash.png'),
       logo2x: require('./assets/monash@2x.png')
     },
@@ -121,6 +121,9 @@ export default {
     {
       year: 2019,
       entries: [
+        {
+          where: 'China Scholarship Council (CSC) Scholarship'
+        },
         {
           where: 'Lu Zengyong CAD&CG Tech Award',
           what: 'Third Prize'
