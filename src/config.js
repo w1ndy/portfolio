@@ -14,7 +14,7 @@ export default {
   profilePic2x: require('./assets/me@2x.jpg'),
 
   // Use &shy; to define where the hypenation will be inserted
-  bio: 'I’m a 3rd-year Computer Science Ph.D. candidate studying Data Visualization at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a> (as of Jun, 2019) and a <a href="http://zjuidg.org">Interactive Data Group</a> member supervised by <a href="http://ycwu.org">Prof. Yingcai Wu</a>. My research interest lies in the <b>Visual Analytics of Massive Urban Data</b>.',
+  bio: 'I’m a 4th-year Computer Science Ph.D. candidate studying Data Visualization at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a> (as of Sep, 2019) and a <a href="http://zjuidg.org">Interactive Data Group</a> member supervised by <a href="http://ycwu.org">Prof. Yingcai Wu</a>. My research interest lies in the <b>Visual Analytics of Massive Urban Data</b>.',
 
   education: [
     {
