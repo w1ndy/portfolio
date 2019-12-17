@@ -122,6 +122,9 @@ export default {
       year: 2019,
       entries: [
         {
+          where: 'National Scholarship'
+        },
+        {
           where: 'China Scholarship Council (CSC) Scholarship'
         },
         {
