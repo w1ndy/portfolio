@@ -10,11 +10,11 @@ export default {
   linkedin: 'https://www.linkedin.com/in/di-weng-05887663/',
   medium: 'https://medium.com/@w1ndy',
 
-  profilePic: require('./assets/me.jpg'),
-  profilePic2x: require('./assets/me@2x.jpg'),
+  profilePic: require('./assets/me.jpg').default,
+  profilePic2x: require('./assets/me@2x.jpg').default,
 
   // Use &shy; to define where the hypenation will be inserted
-  bio: 'I’m a 4th-year Computer Science Ph.D. candidate studying Data Visualization at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a> (as of Sep, 2019) and a <a href="http://zjuidg.org">Interactive Data Group</a> member supervised by <a href="http://ycwu.org">Prof. Yingcai Wu</a>. My research interest lies in the <b>Visual Analytics of Massive Urban Data</b>.',
+  bio: 'I’m a 4th-year Computer Science Ph.D. candidate studying Data Visualization at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a> (as of Jan, 2020) and a <a href="http://zjuidg.org">Interactive Data Group</a> member supervised by <a href="http://ycwu.org">Prof. Yingcai Wu</a>. My research interest lies in the <b>Visual Analytics of Massive Urban Data</b>.',
 
   education: [
     {
@@ -23,8 +23,8 @@ export default {
       title: 'Ph.D. Candidate',
       affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
       description: 'Supervised by <a href="http://www.ycwu.org">Prof. Yingcai Wu</a>',
-      logo: require('./assets/zju.png'),
-      logo2x: require('./assets/zju@2x.png')
+      logo: require('./assets/zju.png').default,
+      logo2x: require('./assets/zju@2x.png').default
     },
     {
       date: 'Sep. 2012 - Jun. 2016',
@@ -32,8 +32,8 @@ export default {
       title: 'Undergraduate Student',
       affiliation: '<a href="http://tsxt.sdu.edu.cn">Taishan Honored College, Shandong University</a>',
       description: 'Bachelor in Computer Science and Technology',
-      logo: require('./assets/sdu.png'),
-      logo2x: require('./assets/sdu@2x.png')
+      logo: require('./assets/sdu.png').default,
+      logo2x: require('./assets/sdu@2x.png').default
     }
   ],
 
@@ -43,60 +43,68 @@ export default {
       location: '<a href="https://goo.gl/maps/chD2rAZPgic9m64P9">Melbourne, Australia</a>',
       title: 'Visiting Research Student',
       affiliation: '<a href="https://www.monash.edu/it/our-research/strengths/chic">Immersive Analytics Lab, Monash University</a>',
-      logo: require('./assets/monash.png'),
-      logo2x: require('./assets/monash@2x.png')
+      logo: require('./assets/monash.png').default,
+      logo2x: require('./assets/monash@2x.png').default
     },
     {
       date: 'Apr. 2019 - Jun. 2019',
       location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
       title: 'Research Intern',
       affiliation: '<a href="http://www.zhejianglab.com/">Zhejiang Lab</a>',
-      logo: require('./assets/zjlab.jpg'),
-      logo2x: require('./assets/zjlab@2x.jpg')
+      logo: require('./assets/zjlab.jpg').default,
+      logo2x: require('./assets/zjlab@2x.jpg').default
     },
     {
       date: 'Apr. 2018 - Sep. 2018',
       location: '<a href="https://goo.gl/maps/4PtB3kMQoSK2">Beijing, China</a>',
       title: 'Research Intern',
       affiliation: '<a href="http://icity.jd.com/">Urban Computing Lab, JD Finance</a>',
-      logo: require('./assets/jdf.png'),
-      logo2x: require('./assets/jdf@2x.png')
+      logo: require('./assets/jdf.png').default,
+      logo2x: require('./assets/jdf@2x.png').default
     },
     {
       date: 'Jul. 2015 - Mar. 2016',
       location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
       title: 'Research Intern',
       affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
-      logo: require('./assets/zju.png'),
-      logo2x: require('./assets/zju@2x.png')
+      logo: require('./assets/zju.png').default,
+      logo2x: require('./assets/zju@2x.png').default
     }
   ],
 
   publications: [
     {
-      teaser: require('./assets/airvis.png'),
-      teaser2x: require('./assets/airvis@2x.png'),
+      teaser: require('./assets/mcrs.png').default,
+      teaser2x: require('./assets/mcrs@2x.png').default,
+      title: 'Pareto-Optimal Transit Route Planning with Multi-Objective Monte-Carlo Tree Search',
+      authors: '<b>Di Weng</b>, Ran Chen, Jianhui Zhang, Jie Bao, Yu Zheng, Mingliang Xu, Yingcai Wu',
+      journal: 'To appear in IEEE Trans. Intell. Transp. Syst.',
+      doi: '10.1109/TITS.2020.2964012'
+    },
+    {
+      teaser: require('./assets/airvis.png').default,
+      teaser2x: require('./assets/airvis@2x.png').default,
       title: 'AirVis: Visual Analytics of Air Pollution Propagation',
       authors: 'Zikun Deng, <b>Di Weng</b>, Jiahui Chen, Ren Liu, Zhibing Wang, Jie Bao, Yu Zheng, Yingcai Wu',
-      journal: 'To appear in IEEE TVCG (IEEE VAST 2019)',
+      journal: 'IEEE Trans. Vis. Comput. Graph. 26.1 (2020), 800-810. (IEEE VAST 2019)',
       pdf: 'https://zjuidg.org/files/AirVis.pdf',
       video: 'https://youtu.be/orjRmmGVT-4',
       doi: '10.1109/TVCG.2019.2934670'
     },
     {
-      teaser: require('./assets/srvis.png'),
-      teaser2x: require('./assets/srvis@2x.png'),
+      teaser: require('./assets/srvis.png').default,
+      teaser2x: require('./assets/srvis@2x.png').default,
       title: 'SRVis: Towards Better Spatial Integration in Ranking Visualization',
       authors: '<b>Di Weng</b>, Ran Chen, Zikun Deng, Feiran Wu, Jingmin Chen, Yingcai Wu',
-      journal: 'IEEE TVCG 25.1 (2019), 459-469. (IEEE InfoVis 2018)',
+      journal: 'IEEE Trans. Vis. Comput. Graph. 25.1 (2019), 459-469. (IEEE InfoVis 2018)',
       pdf: 'http://zjuidg.org/files/srvis.pdf',
       video: 'https://www.youtube.com/watch?v=lenSZci4gy4',
       demo: 'https://srvis.zjuidg.org/',
       doi: '10.1109/TVCG.2018.2865126'
     },
     {
-      teaser: require('./assets/reach.png'),
-      teaser2x: require('./assets/reach@2x.png'),
+      teaser: require('./assets/reach.png').default,
+      teaser2x: require('./assets/reach@2x.png').default,
       title: 'HomeFinder Revisited: Finding Ideal Homes with Reachability-Centric Multi-Criteria Decision Making',
       authors: '<b>Di Weng</b>, Heming Zhu, Jie Bao, Yu Zheng, Yingcai Wu',
       journal: 'Proc. of the ACM CHI 2018',
@@ -105,11 +113,11 @@ export default {
       doi: '10.1145/3173574.3173821'
     },
     {
-      teaser: require('./assets/smartadp.png'),
-      teaser2x: require('./assets/smartadp@2x.png'),
+      teaser: require('./assets/smartadp.png').default,
+      teaser2x: require('./assets/smartadp@2x.png').default,
       title: 'SmartAdP: Visual Analytics of Large-scale Taxi Trajectories for Select&shy;ing Billboard Locations',
       authors: 'Dongyu Liu, <b>Di Weng</b>, Yuhong Li, Jie Bao, Yu Zheng, Huamin Qu, Yingcai Wu',
-      journal: 'IEEE TVCG 23.1 (2017): 1-10. (IEEE VAST 2016)',
+      journal: 'IEEE Trans. Vis. Comput. Graph. 23.1 (2017): 1-10. (IEEE VAST 2016)',
       pdf: 'http://zjuidg.org/files/smartadp.pdf',
       video: 'https://www.youtube.com/watch?v=Nkdup4YcX0A',
       doi: '10.1109/TVCG.2016.2598432',

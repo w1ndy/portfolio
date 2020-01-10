@@ -192,7 +192,7 @@ body {
 
         &.active {
           // border-left: 5px solid #95a5a6;
-          box-shadow: -5px 0px 0px 0px #95a5a6;
+          box-shadow: -5px 1px 0px -1px #95a5a6;
 
           a {
             color: #95a5a6;
