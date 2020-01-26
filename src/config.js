@@ -77,7 +77,7 @@ export default {
       teaser: require('./assets/mcrs.png').default,
       teaser2x: require('./assets/mcrs@2x.png').default,
       title: 'Pareto-Optimal Transit Route Planning with Multi-Objective Monte-Carlo Tree Search',
-      authors: '<b>Di Weng</b>, Ran Chen, Jianhui Zhang, Jie Bao, Yu Zheng, Mingliang Xu, Yingcai Wu',
+      authors: '<b>Di Weng</b>, Ran Chen, Jianhui Zhang, Jie Bao, Yu Zheng, Yingcai Wu',
       journal: 'To appear in IEEE Trans. Intell. Transp. Syst.',
       doi: '10.1109/TITS.2020.2964012'
     },
