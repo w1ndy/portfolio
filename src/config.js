@@ -6,7 +6,7 @@ export default {
 
   github: 'https://github.com/w1ndy',
   twitter: 'https://twitter.com/skies457',
-  instagram: 'https://instagram.com/skies457',
+  researchgate: 'https://www.researchgate.net/profile/Di_Weng',
   linkedin: 'https://www.linkedin.com/in/di-weng-05887663/',
   medium: 'https://medium.com/@w1ndy',
 
@@ -74,11 +74,20 @@ export default {
 
   publications: [
     {
+      teaser: require('./assets/corvizor.png').default,
+      teaser2x: require('./assets/corvizor@2x.png').default,
+      title: 'Towards Better Detection and Analysis of Massive Spatiotemporal Co-Occurrence Patterns',
+      authors: 'Yingcai Wu, <b>Di Weng</b>, Zikun Deng, Jie Bao, Mingliang Xu, Zhangye Wang, ...',
+      journal: 'To appear in IEEE Trans. Intell. Transp. Syst.',
+      doi: '10.1109/TITS.2020.2983226'
+    },
+    {
       teaser: require('./assets/mcrs.png').default,
       teaser2x: require('./assets/mcrs@2x.png').default,
       title: 'Pareto-Optimal Transit Route Planning with Multi-Objective Monte-Carlo Tree Search',
       authors: '<b>Di Weng</b>, Ran Chen, Jianhui Zhang, Jie Bao, Yu Zheng, Yingcai Wu',
       journal: 'To appear in IEEE Trans. Intell. Transp. Syst.',
+      pdf: 'https://www.researchgate.net/publication/339242293_Pareto-Optimal_Transit_Route_Planning_With_Multi-Objective_Monte-Carlo_Tree_Search',
       doi: '10.1109/TITS.2020.2964012'
     },
     {
