@@ -14,11 +14,11 @@ export default {
   profilePic2x: require('./assets/me@2x.jpg').default,
 
   // Use &shy; to define where the hypenation will be inserted
-  bio: 'I’m a 4th-year Computer Science Ph.D. candidate studying Data Visualization at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a> (as of Jan, 2020) and a <a href="http://zjuidg.org">Interactive Data Group</a> member supervised by <a href="http://ycwu.org">Prof. Yingcai Wu</a>. My research interest lies in the <b>Visual Analytics of Massive Urban Data</b>.',
+  bio: 'I’m a 5th-year Computer Science Ph.D. candidate <b>(Job Hunting!)</b> studying Data Visualization at <a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a> (as of Jan, 2020) and a <a href="http://zjuidg.org">Interactive Data Group</a> member supervised by <a href="http://ycwu.org">Prof. Yingcai Wu</a>. My research interest lies in the <b>Visual Analytics of Massive Urban Data</b>.',
 
   education: [
     {
-      date: 'Sep. 2016 - Jun. 2021',
+      date: 'Sep. 2016 - Dec. 2021',
       location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
       title: 'Ph.D. Candidate',
       affiliation: '<a href="http://www.cad.zju.edu.cn">State Key Lab of CAD&CG, Zhejiang University</a>',
@@ -38,6 +38,14 @@ export default {
   ],
 
   experience: [
+    {
+      date: 'May. 2020 - ',
+      location: '<a href="https://goo.gl/maps/di4P6wCET5C2">Hangzhou, China</a>',
+      title: 'Research Intern',
+      affiliation: '<a href="http://www.zhejianglab.com/">Zhejiang Lab</a>',
+      logo: require('./assets/zjlab.jpg').default,
+      logo2x: require('./assets/zjlab@2x.jpg').default
+    },
     {
       date: 'Jul. 2019 - Jan. 2020',
       location: '<a href="https://goo.gl/maps/chD2rAZPgic9m64P9">Melbourne, Australia</a>',
@@ -74,12 +82,21 @@ export default {
 
   publications: [
     {
+      teaser: require('./assets/bnva.png').default,
+      teaser2x: require('./assets/bnva@2x.png').default,
+      title: 'Towards Better Bus Networks: A Visual Analytics Approach',
+      authors: '<b>Di Weng</b>, Chengbo Zheng, Zikun Deng, Mingze Ma, Jie Bao, Yu Zheng, Mingliang Xu, Yingcai Wu',
+      journal: 'To appear in IEEE Trans. Vis. Comput. Graph. (IEEE VAST 2020)',
+      pdf: 'https://arxiv.org/abs/2008.10915'
+    },
+    {
       teaser: require('./assets/corvizor.png').default,
       teaser2x: require('./assets/corvizor@2x.png').default,
       title: 'Towards Better Detection and Analysis of Massive Spatiotemporal Co-Occurrence Patterns',
       authors: 'Yingcai Wu, <b>Di Weng</b>, Zikun Deng, Jie Bao, Mingliang Xu, Zhangye Wang, ...',
       journal: 'To appear in IEEE Trans. Intell. Transp. Syst.',
-      doi: '10.1109/TITS.2020.2983226'
+      doi: '10.1109/TITS.2020.2983226',
+      pdf: 'https://www.researchgate.net/publication/340797478_Towards_Better_Detection_and_Analysis_of_Massive_Spatiotemporal_Co-Occurrence_Patterns'
     },
     {
       teaser: require('./assets/mcrs.png').default,
