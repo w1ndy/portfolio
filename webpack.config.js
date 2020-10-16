@@ -88,7 +88,9 @@ if (process.env.NODE_ENV === 'production') {
       },
     }),
     new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, './index.html'), to: '../' }
+      { from: path.resolve(__dirname, './index.html'), to: '../' },
+      { from: path.resolve(__dirname, './src/assets/cv_eng.pdf'), to: '../' },
+      { from: path.resolve(__dirname, './src/assets/cv_chs.pdf'), to: '../' }
     ]),
     new SitemapPlugin('https://dweng.org', ['/'], {
       skipGzip: true,
