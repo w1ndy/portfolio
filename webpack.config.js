@@ -7,6 +7,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const PrerenderSpaPlugin = require('prerender-spa-plugin')
 const RobotstxtPlugin = require("robotstxt-webpack-plugin")
+const PnpWebpackPlugin = require(`pnp-webpack-plugin`)
 
 module.exports = {
   entry: './src/main.js',
@@ -51,10 +52,18 @@ module.exports = {
     ]
   },
   resolve: {
+    plugins: [
+      PnpWebpackPlugin,
+    ],
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     },
     extensions: ['*', '.js', '.vue', '.json']
+  },
+  resolveLoader: {
+    plugins: [
+      PnpWebpackPlugin.moduleLoader(module),
+    ],
   },
   devServer: {
     historyApiFallback: true,
