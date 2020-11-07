@@ -32,6 +32,7 @@ export default {
 @import "../def.scss";
 $AWARDS_SEPARATOR_SPACING: 20px;
 $AWARDS_YEAR_COLOR: #95a5a6;
+$DARKMODE_AWARDS_YEAR_COLOR: #a5b4bb;
 
 #awards {
   .years {
@@ -61,6 +62,9 @@ $AWARDS_YEAR_COLOR: #95a5a6;
           padding-right: $AWARDS_SEPARATOR_SPACING;
           padding-bottom: 0px;
         }
+        @media (prefers-color-scheme: dark) {
+          color: $DARKMODE_AWARDS_YEAR_COLOR;
+        }
       }
 
       .entries {
@@ -69,6 +73,9 @@ $AWARDS_YEAR_COLOR: #95a5a6;
         padding: 0 0 0 $AWARDS_SEPARATOR_SPACING;
         margin: 0 0 0 $AWARDS_SEPARATOR_SPACING / 2;
         border-left: 1px solid $AWARDS_YEAR_COLOR;
+        @media (prefers-color-scheme: dark) {
+          border-left: 1px solid $DARKMODE_AWARDS_YEAR_COLOR;
+        }
 
         @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
           margin: 0;

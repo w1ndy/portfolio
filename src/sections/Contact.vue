@@ -27,6 +27,7 @@ export default {
 @import "../def.scss";
 $CONTACT_SEPARATOR_SPACING: 10px;
 $CONTACT_LEFT_COLUMN_COLOR: #95a5a6;
+$DARKMODE_CONTACT_LEFT_COLUMN_COLOR: #a5b4bb;
 
 #contact {
   .types {
@@ -49,6 +50,9 @@ $CONTACT_LEFT_COLUMN_COLOR: #95a5a6;
       .type-title {
         padding-right: $CONTACT_SEPARATOR_SPACING;
         color: $CONTACT_LEFT_COLUMN_COLOR;
+        @media (prefers-color-scheme: dark) {
+          color: $DARKMODE_CONTACT_LEFT_COLUMN_COLOR;
+        }
 
         @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
           flex: 0 0 70px;

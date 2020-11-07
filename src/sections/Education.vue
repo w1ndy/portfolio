@@ -47,6 +47,9 @@ $LOGO_RIGHT_PADDING: 25px;
     @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
       margin-left: 180px;
     }
+    @media (prefers-color-scheme: dark) {
+      border-left: 2px solid #4c5457;
+    }
   }
 
   .entry {
@@ -69,9 +72,12 @@ $LOGO_RIGHT_PADDING: 25px;
         display: block;
         width: 5px;
         height: 40px;
-        background-color: $BACKGROUND_COLOR;
         left: -2.5px;
         top: 0;
+        background-color: $BACKGROUND_COLOR;
+        @media (prefers-color-scheme: dark) {
+          background-color: $DARKMODE_BACKGROUND_COLOR;
+        }
       }
 
       &::after {
@@ -91,13 +97,24 @@ $LOGO_RIGHT_PADDING: 25px;
       left: -1px;
       top: 50px;
       transform: translate(-50%, 50%);
+
+      @media (prefers-color-scheme: dark) {
+        background-color: rgb(59, 59, 59);
+        border: 2px solid #4e5558;
+      }
     }
 
     .date, .location {
       color: #95a5a6;
+      @media (prefers-color-scheme: dark) {
+        color: #a5b4bb;
+      }
 
       a {
         color: #95a5a6;
+        @media (prefers-color-scheme: dark) {
+          color: #a5b4bb;
+        }
       }
 
       @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
@@ -136,6 +153,8 @@ $LOGO_RIGHT_PADDING: 25px;
         object-fit: contain;
         bottom: 0;
         transform: translateY(-5px);
+        background-color: white;
+        border-radius: 5px;
       }
     }
   }

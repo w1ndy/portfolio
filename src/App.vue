@@ -106,6 +106,9 @@ body {
 
   a {
     color: black;
+    @media (prefers-color-scheme: dark) {
+      color: white;
+    }
   }
 }
 
@@ -135,6 +138,10 @@ body {
 
       @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
         display: inline-block;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        color: #4a4e50;
       }
     }
   }
@@ -188,14 +195,22 @@ body {
           transition: color 200ms;
           color: #bdc3c7;
           text-decoration: none;
+
+          @media (prefers-color-scheme: dark) {
+            color: rgb(124, 135, 141);
+          }
         }
 
         &.active {
           // border-left: 5px solid #95a5a6;
-          box-shadow: -5px 1px 0px -1px #95a5a6;
+          box-shadow: -5px 1px 0px -1px rgb(165, 180, 187);
 
           a {
             color: #95a5a6;
+
+            @media (prefers-color-scheme: dark) {
+              color: rgb(165, 180, 187);
+            }
           }
         }
       }
@@ -214,6 +229,12 @@ section {
     content: '#';
     color: #95a5a6;
     left: -25px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
   }
 }
 

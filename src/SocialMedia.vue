@@ -69,12 +69,16 @@ export default {
       transition: color 200ms;
       text-decoration: none;
 
+      @media (prefers-color-scheme: dark) {
+        color: rgb(165, 180, 187);
+      }
+
       &:not(:first-child) {
         padding-left: 15px;
       }
 
       &:hover, &:active {
-        color: #7f8c8d;
+        color: rgb(137, 149, 155);
       }
     }
   }

@@ -43,11 +43,16 @@ export default {
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #eee;
+
     margin: auto;
 
     @media print, (min-width: $RESPONSIVE_BREAKPOINT) {
       flex-direction: row;
       margin: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      border: 1px solid #333;
     }
   }
 
@@ -91,6 +96,10 @@ export default {
         font-size: 10em;
         color: #f2f2f2;
         z-index: -1;
+
+        @media (prefers-color-scheme: dark) {
+          color: #333;
+        }
       }
     }
   }

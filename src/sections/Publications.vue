@@ -120,12 +120,18 @@ $INFOBOX_LEFT_MARGIN: 20px;
             font-weight: 300;
             color: #95a5a6;
             font-size: 0.85rem;
+            @media (prefers-color-scheme: dark) {
+              color: #a5b4bb;
+            }
           }
         }
 
         .links {
           font-weight: 400;
           color: #95a5a6;
+          @media (prefers-color-scheme: dark) {
+            color: #a5b4bb;
+          }
           // height: 1.5rem;
           padding-top: 10px;
           font-size: 0.8rem;
@@ -136,12 +142,18 @@ $INFOBOX_LEFT_MARGIN: 20px;
             display: flex;
             flex-direction: row;
             background-color: white;
+            @media (prefers-color-scheme: dark) {
+              background-color: $DARKMODE_BACKGROUND_COLOR;
+            }
             width: 100%;
             align-content: space-between;
           }
 
           a {
             color: #7f8c8d;
+            @media (prefers-color-scheme: dark) {
+              color: #a5b4bb;
+            }
             text-decoration: none;
             display: inline-block;
 

@@ -41,6 +41,11 @@ footer {
   text-shadow: 0 0 2px lighten(#95a5a6, 20%);
   line-height: 1.7rem;
 
+  @media (prefers-color-scheme: dark) {
+    color: #a5b4bb;
+    text-shadow: 0 0 2px darken(#a5b4bb, 20%);
+  }
+
   span:not(:first-child)::before {
     content: '|';
     padding-left: 5px;
